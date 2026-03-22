@@ -1,0 +1,104 @@
+{
+  "nav": {
+    "about": "关于我们",
+    "services": "服务项目",
+    "portfolio": "作品展示",
+    "aifilm": "AI影视",
+    "contact": "联系我们"
+  },
+  "hero": {
+    "tagline": "硅谷科技 × 好莱坞创意",
+    "subtitle": "硅谷总部，好莱坞制作团队，AI赋能影视制作",
+    "cta_portfolio": "查看作品",
+    "cta_contact": "联系我们"
+  },
+  "about": {
+    "title": "关于我们",
+    "subtitle": "连接两个世界",
+    "description": "Good Film AI（Summer Grace LLC）是一家总部位于硅谷的影视制作工作室，制作团队源自洛杉矶/好莱坞。我们将前沿科技与电影级制作工艺相融合，服务全球最具创新力的企业。",
+    "description2": "我们专注于企业宣传片、活动记录和商业制作，服务科技公司、行业峰会和非营利机构。作为AI影视的先行者，我们正在探索生成式AI和AI Agents如何革新影视制作流程。",
+    "stat_projects": "交付项目",
+    "stat_cities": "城市布局",
+    "stat_clients": "满意客户",
+    "city_sv": "硅谷",
+    "city_la": "洛杉矶"
+  },
+  "services": {
+    "title": "服务项目",
+    "subtitle": "专业影视制作",
+    "corporate": {
+      "title": "企业宣传片",
+      "description": "公司介绍、产品演示、品牌故事——精准捕捉您的愿景，打动目标受众。"
+    },
+    "event": {
+      "title": "活动/展会记录",
+      "description": "科技峰会、产品发布、行业展会、企业活动——以电影级品质完整记录。"
+    },
+    "commercial": {
+      "title": "广告片",
+      "description": "广告影片、推广内容、社交媒体营销——用影像驱动商业成果。"
+    },
+    "ai": {
+      "title": "AI影视制作",
+      "description": "运用生成式AI工具和AI Agents，突破视觉叙事的边界。"
+    }
+  },
+  "portfolio": {
+    "title": "作品展示",
+    "subtitle": "精选项目",
+    "trae": {
+      "title": "Trae SOLO GA 发布",
+      "description": "字节跳动AI编程助手Trae产品正式发布（GA Release）视频。",
+      "category": "产品发布"
+    },
+    "robotics": {
+      "title": "机器人创新科技",
+      "description": "硅谷前沿机器人科技公司企业宣传片。",
+      "category": "企业宣传"
+    },
+    "techforum": {
+      "title": "科技论坛 2025",
+      "description": "硅谷大型科技峰会全程活动记录。",
+      "category": "活动记录"
+    },
+    "nonprofit": {
+      "title": "社区影响力",
+      "description": "非营利机构公益宣传片，展示社区项目与社会影响力。",
+      "category": "公益宣传"
+    },
+    "aifilm": {
+      "title": "AI实验短片",
+      "description": "运用生成式AI工具与传统电影技法创作的实验短片。",
+      "category": "AI影视"
+    }
+  },
+  "aifilm": {
+    "title": "AI影视",
+    "subtitle": "影视制作的未来",
+    "description": "我们站在AI影视制作的前沿，探索生成式AI和智能代理如何变革制作的每一个环节——从预可视化和剧本创作，到后期制作和视觉特效。",
+    "feature1_title": "Gen AI 创作",
+    "feature1_desc": "运用最前沿的生成式AI创造令人惊叹的视觉效果，拓展创意可能，加速制作流程。",
+    "feature2_title": "AI Agents 赋能制作",
+    "feature2_desc": "部署智能AI代理，在整个制作流程中协助排期管理、素材管理和创意决策。",
+    "feature3_title": "AI电影节亮相",
+    "feature3_desc": "我们的AI辅助影片已在AI电影节上展映，不断突破电影叙事的可能性边界。"
+  },
+  "contact": {
+    "title": "联系我们",
+    "subtitle": "一起创造精彩",
+    "name": "您的姓名",
+    "email": "电子邮箱",
+    "company": "公司名称（选填）",
+    "message": "请描述您的项目需求",
+    "submit": "发送消息",
+    "success": "感谢您的留言！我们会尽快联系您。",
+    "error": "发送失败，请稍后重试。",
+    "book_title": "预约咨询",
+    "book_desc": "预约免费30分钟咨询，详细讨论您的项目需求。"
+  },
+  "footer": {
+    "tagline": "AI赋能影视制作",
+    "rights": "版权所有。",
+    "company": "Summer Grace LLC"
+  }
+}

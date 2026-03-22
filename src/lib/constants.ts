@@ -1,0 +1,37 @@
+import type { NavItem, ServiceItem, PortfolioItem } from "@/types";
+
+export const NAV_ITEMS: readonly NavItem[] = [
+  { label: "about", href: "#about" },
+  { label: "services", href: "#services" },
+  { label: "portfolio", href: "#portfolio" },
+  { label: "aifilm", href: "#aifilm" },
+  { label: "contact", href: "#contact" },
+] as const;
+
+export const SERVICES: readonly ServiceItem[] = [
+  { key: "corporate", icon: "Film" },
+  { key: "event", icon: "Camera" },
+  { key: "commercial", icon: "Megaphone" },
+  { key: "ai", icon: "Sparkles" },
+] as const;
+
+export const PORTFOLIO_ITEMS: readonly PortfolioItem[] = [
+  {
+    key: "trae",
+    image: "/images/portfolio-trae.jpg",
+    videoUrl:
+      "https://www.youtube.com/playlist?list=PL10F5K3_SNK3gd-vPL__fmfZV_8OWAnOQ",
+  },
+  { key: "robotics", image: "/images/portfolio-robotics.jpg" },
+  { key: "techforum", image: "/images/portfolio-techforum.jpg" },
+  { key: "nonprofit", image: "/images/portfolio-nonprofit.jpg" },
+  { key: "aifilm", image: "/images/portfolio-aifilm.jpg" },
+] as const;
+
+export const CALENDLY_URL = "https://calendly.com/goodfilmai";
+
+export const SOCIAL_LINKS = {
+  youtube: "https://www.youtube.com/@goodfilmai",
+  instagram: "https://www.instagram.com/goodfilmai",
+  linkedin: "https://www.linkedin.com/company/goodfilmai",
+} as const;

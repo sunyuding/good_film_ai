@@ -1,0 +1,104 @@
+{
+  "nav": {
+    "about": "About",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "aifilm": "AI Film",
+    "contact": "Contact"
+  },
+  "hero": {
+    "tagline": "Where Silicon Valley Meets Hollywood",
+    "subtitle": "Silicon Valley-based, Hollywood-crafted AI film production studio",
+    "cta_portfolio": "View Our Work",
+    "cta_contact": "Get in Touch"
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "Bridging Two Worlds",
+    "description": "Good Film AI (Summer Grace LLC) is a film and video production studio based in Silicon Valley, with a production team rooted in LA/Hollywood craftsmanship. We bring together cutting-edge technology and cinematic artistry to serve the world's most innovative companies.",
+    "description2": "We specialize in corporate storytelling, event documentation, and commercial production for tech companies, conferences, and nonprofit organizations. As pioneers in AI Film, we're exploring how generative AI and AI agents can revolutionize the filmmaking process.",
+    "stat_projects": "Projects Delivered",
+    "stat_cities": "Cities",
+    "stat_clients": "Happy Clients",
+    "city_sv": "Silicon Valley",
+    "city_la": "Los Angeles"
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Professional Video Production",
+    "corporate": {
+      "title": "Corporate Video",
+      "description": "Company profiles, product demos, and brand storytelling that capture your vision and engage your audience."
+    },
+    "event": {
+      "title": "Event Coverage",
+      "description": "Tech conferences, product launches, trade shows, and corporate events — documented with cinematic quality."
+    },
+    "commercial": {
+      "title": "Commercial & Ads",
+      "description": "Advertising films, promotional content, and social media campaigns that drive results."
+    },
+    "ai": {
+      "title": "AI Production",
+      "description": "Leveraging generative AI tools and AI agents to push the boundaries of visual storytelling."
+    }
+  },
+  "portfolio": {
+    "title": "Our Work",
+    "subtitle": "Selected Projects",
+    "trae": {
+      "title": "Trae SOLO GA Release",
+      "description": "Product GA release video for ByteDance's AI coding assistant Trae.",
+      "category": "Product Release"
+    },
+    "robotics": {
+      "title": "Robotics Innovation",
+      "description": "Corporate video showcasing cutting-edge robotics technology in Silicon Valley.",
+      "category": "Corporate Video"
+    },
+    "techforum": {
+      "title": "Tech Forum 2025",
+      "description": "Full event coverage for a major Silicon Valley technology conference.",
+      "category": "Event Coverage"
+    },
+    "nonprofit": {
+      "title": "Community Impact",
+      "description": "Nonprofit promotional film highlighting community programs and social impact.",
+      "category": "Nonprofit"
+    },
+    "aifilm": {
+      "title": "AI Short Film",
+      "description": "Experimental short film created using generative AI tools and traditional filmmaking.",
+      "category": "AI Film"
+    }
+  },
+  "aifilm": {
+    "title": "AI Film",
+    "subtitle": "The Future of Filmmaking",
+    "description": "We're at the forefront of AI-powered filmmaking, exploring how generative AI and intelligent agents can transform every stage of production — from pre-visualization and scriptwriting to post-production and visual effects.",
+    "feature1_title": "Gen AI Creation",
+    "feature1_desc": "Using state-of-the-art generative AI to create stunning visuals, expand creative possibilities, and accelerate production workflows.",
+    "feature2_title": "AI Agents in Production",
+    "feature2_desc": "Deploying intelligent AI agents that assist with scheduling, asset management, and creative decision-making throughout the production pipeline.",
+    "feature3_title": "Film Festival Presence",
+    "feature3_desc": "Our AI-assisted films have been showcased at AI Film Festivals, pushing the boundaries of what's possible in cinematic storytelling."
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "subtitle": "Let's Create Together",
+    "name": "Your Name",
+    "email": "Email Address",
+    "company": "Company (Optional)",
+    "message": "Tell us about your project",
+    "submit": "Send Message",
+    "success": "Thank you! We'll be in touch soon.",
+    "error": "Something went wrong. Please try again.",
+    "book_title": "Book a Consultation",
+    "book_desc": "Schedule a free 30-minute consultation to discuss your project."
+  },
+  "footer": {
+    "tagline": "AI-Powered Film Production",
+    "rights": "All rights reserved.",
+    "company": "Summer Grace LLC"
+  }
+}

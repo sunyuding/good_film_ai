@@ -1,0 +1,120 @@
+# Good Film AI — Website Implementation Plan
+
+## Context
+
+**Good Film AI** (Summer Grace LLC) is a film/video production studio based in Silicon Valley with Hollywood/LA roots. The team is exploring AI Film — using Gen AI and AI Agents to empower filmmaking. They need a bilingual company showcase website.
+
+**Domains:** goodfilm.ai, goodaifilm.com
+**Core Clients:** Silicon Valley tech companies, tech conferences/expos, nonprofits
+**Portfolio:** Robotics company videos, tech forums, ByteDance Trae launch event, nonprofit events, LA film/commercial work
+**AI Film:** AI-generated films, AI Film Festivals participation, AI Agents in production workflows
+
+---
+
+## Tech Stack
+
+- **Next.js 14+ (App Router)** + TypeScript
+- **Tailwind CSS** with custom cinematic theme
+- **next-intl** for EN/ZH bilingual support
+- **Framer Motion** for scroll animations
+- **React Hook Form + Zod** for contact form
+- **Calendly** embed for booking
+- **Vercel** for deployment
+
+---
+
+## Site Structure (Single-Page, 6 Sections)
+
+| # | Section | Style | Purpose |
+|---|---------|-------|---------|
+| 1 | **Hero** | Dark cinematic | Tagline + CTA, full-viewport |
+| 2 | **About** | Light clean | Company story, SV + Hollywood roots |
+| 3 | **Services** | Light gray | 4-card grid of service offerings |
+| 4 | **Portfolio** | White | 5 project showcase cards (placeholders) |
+| 5 | **AI Film** | Dark cinematic | AI filmmaking vision + future direction |
+| 6 | **Contact** | Light | Contact form + Calendly embed |
+
+---
+
+## File Structure
+
+```
+good_film_ai/
+├── public/images/              # Placeholder images
+├── src/
+│   ├── app/
+│   │   ├── [locale]/
+│   │   │   ├── layout.tsx      # Locale layout with Header/Footer
+│   │   │   └── page.tsx        # Assembles all 6 sections
+│   │   ├── api/contact/route.ts # Contact form endpoint
+│   │   ├── layout.tsx          # Root HTML layout
+│   │   ├── page.tsx            # Redirect to /en
+│   │   └── globals.css
+│   ├── components/
+│   │   ├── layout/             # Header, Footer, Navigation
+│   │   ├── sections/           # Hero, About, Services, Portfolio, AIFilm, Contact
+│   │   ├── ui/                 # Button, Card, SectionHeading, ScrollReveal, LanguageSwitcher, CalendlyEmbed
+│   │   └── forms/              # ContactForm
+│   ├── i18n/                   # next-intl config (routing, request, navigation)
+│   ├── messages/
+│   │   ├── en.json             # English content
+│   │   └── zh.json             # Chinese content
+│   ├── lib/                    # constants, validators
+│   └── types/                  # TypeScript interfaces
+├── middleware.ts               # Locale detection
+├── next.config.ts              # next-intl plugin
+├── tailwind.config.ts          # Custom cinema theme
+└── package.json
+```
+
+---
+
+## Implementation Phases
+
+### Phase 1: Foundation
+1. Scaffold Next.js project with TypeScript + Tailwind
+2. Install deps: `next-intl framer-motion react-hook-form @hookform/resolvers zod lucide-react`
+3. Configure Tailwind custom theme (cinema colors, fonts, animations)
+4. Set up next-intl (routing, middleware, message files)
+5. Create types and constants
+
+### Phase 2: Layout Shell
+6. Build UI primitives (Button, Card, SectionHeading, ScrollReveal)
+7. Build Header (sticky nav, language switcher EN/ZH, mobile hamburger)
+8. Build Footer (company info, links, social)
+
+### Phase 3: Sections
+9. HeroSection — dark bg, tagline, 2 CTAs
+10. AboutSection — company story, Hollywood + SV
+11. ServicesSection — 4-card grid (Corporate Video, Event Coverage, Commercial, AI Production)
+12. PortfolioSection — 5 project cards with placeholder images
+13. AIFilmSection — dark section, AI film vision, festivals, AI agents in production
+14. ContactSection — form + Calendly embed
+
+### Phase 4: Polish
+15. Contact form API route (validation, honeypot spam prevention)
+16. Complete EN + ZH translation files
+17. Responsive testing + mobile menu
+18. Scroll animations + smooth scroll
+
+---
+
+## Key Design Decisions
+
+- **Style:** Cinematic dark hero → clean professional sections → dark AI Film section → light contact. Creates visual rhythm.
+- **Colors:** Deep blacks (#0a0a0a), subtle gold accent (#c9a84c) for Hollywood nod, tech blue (#4c6ef5) for CTAs
+- **Fonts:** Inter (Latin) + Noto Sans SC (Chinese) via next/font
+- **Content:** All placeholder text — real portfolio content added later
+- **Calendly URL:** Placeholder, user provides real link later
+
+---
+
+## Verification
+
+1. `npm run dev` — site loads at localhost:3000
+2. Navigate to `/en` and `/zh` — both languages render correctly
+3. Language switcher toggles between EN/ZH
+4. All 6 sections visible with smooth scroll navigation
+5. Contact form validates and submits to API route
+6. Responsive: check mobile (375px), tablet (768px), desktop (1440px)
+7. `npm run build` — no build errors
