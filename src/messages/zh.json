@@ -188,7 +188,8 @@
     "feature2_title": "AI代理",
     "feature2_desc": "智能代理在整个制作流程中协助排期、素材管理和创意决策。",
     "feature3_title": "电影节展映",
-    "feature3_desc": "我们的AI辅助影片已在AI电影节展映，不断突破电影叙事的边界。"
+    "feature3_desc": "我们的AI辅助影片已在AI电影节展映，不断突破电影叙事的边界。",
+    "festival_cta": "特拉努AI电影节"
   },
   "contact": {
     "title": "开启合作",
@@ -202,6 +203,38 @@
     "error": "发送失败，请稍后重试。",
     "book_title": "预约咨询",
     "book_desc": "预约免费30分钟通话，详细讨论您的项目。"
+  },
+  "festival_page": {
+    "title": "特拉努AI电影节",
+    "subtitle": "Good Film AI 联合创办",
+    "intro": "Good Film AI 是特拉努AI电影节暨特拉努天使奖的联合创始方——这是一场汇聚文学卓越、AI技术与信仰文化的国际电影运动。我们携手特拉努影视学院，共同打造一个让被埋葬的好故事通过AI电影制作重获新生的平台。",
+    "back": "返回AI影视",
+    "date_label": "颁奖典礼",
+    "date": "2026年6月26日",
+    "format_label": "形式",
+    "format": "全球线上电影节",
+    "prize_label": "奖金池",
+    "prize": "20万美元",
+    "story_title": "我们的角色",
+    "story_desc": "作为联合创始方，Good Film AI 将硅谷影视制作专长和AI制作能力注入特拉努天使奖。我们正在帮助塑造电影节的愿景——将东方文化深度与西方电影语言相融合，创造全新的跨文化视听运动。",
+    "story_desc2": "特拉努天使奖设立三大类别——原创作品、改编作品和动画作品——每个类别分别评选最佳编剧、最佳制作和最佳导演，共计九项大奖。电影节旨在证明：富有情感共鸣、积极向上的内容，借助AI制作能力，完全能够在主流市场取得商业成功。",
+    "highlights_title": "电影节亮点",
+    "highlight1_title": "9项大奖，20万美元奖金",
+    "highlight1_desc": "三大类别——原创、改编与动画——每类设最佳编剧、最佳制作和最佳导演奖项。",
+    "highlight2_title": "AI电影制作革命",
+    "highlight2_desc": "借助Runway、Sora、Kling、MidJourney等工具，让每位创作者都能制作电影级作品。",
+    "highlight3_title": "全球同步直播",
+    "highlight3_desc": "横跨美洲、亚洲和非洲的同步直播，预计观众超15万人。",
+    "dates_title": "重要日期",
+    "date_deadline_label": "投稿截止",
+    "date_deadline": "2026年5月31日",
+    "date_results_label": "结果通知",
+    "date_results": "2026年6月15日",
+    "date_ceremony_label": "颁奖典礼",
+    "date_ceremony": "2026年6月26日",
+    "cta_title": "提交您的影片",
+    "cta_desc": "访问特拉努天使奖官方网站，了解投稿指南、参赛类别等详情。",
+    "cta_button": "访问 goodaifilm.com"
   },
   "footer": {
     "tagline": "AI驱动影视制作",

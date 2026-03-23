@@ -1,7 +1,8 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { Wand2, Bot, Trophy } from "lucide-react";
+import { Wand2, Bot, Trophy, ExternalLink } from "lucide-react";
+import { useLocale } from "next-intl";
 import ScrollReveal from "@/components/ui/ScrollReveal";
 
 const features = [
@@ -12,9 +13,13 @@ const features = [
 
 export default function AIFilmSection() {
   const t = useTranslations("aifilm");
+  const locale = useLocale();
 
   return (
-    <section id="aifilm" className="section-padding relative overflow-hidden bg-cinema-black">
+    <section
+      id="aifilm"
+      className="section-padding relative overflow-hidden bg-cinema-black"
+    >
       {/* Ambient glow */}
       <div className="pointer-events-none absolute left-1/4 top-1/2 h-96 w-96 -translate-x-1/2 -translate-y-1/2 rounded-full bg-gold/[0.03] blur-3xl" />
       <div className="pointer-events-none absolute right-1/4 top-1/3 h-64 w-64 rounded-full bg-accent/[0.03] blur-3xl" />
@@ -42,7 +47,10 @@ export default function AIFilmSection() {
             <ScrollReveal key={titleKey} delay={0.2 + i * 0.1}>
               <div className="glass-card group text-center">
                 <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-2xl border border-gold/10 bg-gold/5 transition-all duration-500 group-hover:border-gold/30 group-hover:bg-gold/10 group-hover:shadow-lg group-hover:shadow-gold/5">
-                  <Icon size={28} className="text-gold transition-transform duration-500 group-hover:scale-110" />
+                  <Icon
+                    size={28}
+                    className="text-gold transition-transform duration-500 group-hover:scale-110"
+                  />
                 </div>
                 <h3 className="text-lg font-semibold text-white">
                   {t(titleKey)}
@@ -54,6 +62,19 @@ export default function AIFilmSection() {
             </ScrollReveal>
           ))}
         </div>
+
+        {/* AI Film Festival CTA */}
+        <ScrollReveal delay={0.5}>
+          <div className="mt-16 text-center">
+            <a
+              href={`/${locale}/ai-film-festival`}
+              className="inline-flex items-center gap-2 rounded-full border border-gold/30 px-8 py-4 text-base font-semibold text-gold transition-all hover:border-gold/60 hover:bg-gold/10 hover:shadow-lg hover:shadow-gold/10"
+            >
+              {t("festival_cta")}
+              <ExternalLink size={18} />
+            </a>
+          </div>
+        </ScrollReveal>
       </div>
     </section>
   );

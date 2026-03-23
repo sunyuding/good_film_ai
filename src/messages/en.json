@@ -188,7 +188,8 @@
     "feature2_title": "AI Agents",
     "feature2_desc": "Intelligent agents assisting with scheduling, asset management, and creative decisions throughout the production pipeline.",
     "feature3_title": "Festival Circuit",
-    "feature3_desc": "Our AI-assisted films screened at AI Film Festivals, pushing the boundaries of cinematic storytelling."
+    "feature3_desc": "Our AI-assisted films screened at AI Film Festivals, pushing the boundaries of cinematic storytelling.",
+    "festival_cta": "Tyrannus AI Film Festival"
   },
   "contact": {
     "title": "Let's Create",
@@ -202,6 +203,38 @@
     "error": "Something went wrong. Please try again.",
     "book_title": "Book a Consultation",
     "book_desc": "Schedule a free 30-minute call to discuss your project."
+  },
+  "festival_page": {
+    "title": "Tyrannus AI Film Festival",
+    "subtitle": "Co-Founded by Good Film AI",
+    "intro": "Good Film AI is a co-founder of the Tyrannus AI Film Festival and the Tyrannus Angel Awards — an international film movement uniting literary excellence, AI technology, and faith culture. Together with the Tyrannus Filmmakers Academy, we are building a platform where buried good stories are resurrected through the power of AI filmmaking.",
+    "back": "Back to AI Film",
+    "date_label": "Ceremony",
+    "date": "June 26, 2026",
+    "format_label": "Format",
+    "format": "Global Online Festival",
+    "prize_label": "Prize Fund",
+    "prize": "$200,000 USD",
+    "story_title": "Our Role",
+    "story_desc": "As co-founders, Good Film AI brings its Silicon Valley filmmaking expertise and AI production capabilities to the Tyrannus Angel Awards. We are helping shape the festival's vision — bridging Eastern cultural depth with Western cinematic language to create a new cross-cultural audiovisual movement.",
+    "story_desc2": "The Tyrannus Angel Awards recognizes three categories — Original Works, Adapted Works, and Animated Works — each awarding Best Screenplay, Best Production, and Best Director, for a total of nine awards. The festival aims to prove that emotionally resonant, life-affirming content can achieve mainstream commercial success through AI-powered production.",
+    "highlights_title": "Festival Highlights",
+    "highlight1_title": "9 Awards, $200K Fund",
+    "highlight1_desc": "Three categories — Original, Adapted, and Animated — each with Best Screenplay, Best Production, and Best Director awards.",
+    "highlight2_title": "AI Filmmaking Revolution",
+    "highlight2_desc": "Leveraging tools like Runway, Sora, Kling, and MidJourney so every storyteller can produce cinema-quality work.",
+    "highlight3_title": "Global Broadcast",
+    "highlight3_desc": "Simultaneous live broadcast across the Americas, Asia, and Africa with 150,000+ projected viewers.",
+    "dates_title": "Key Dates",
+    "date_deadline_label": "Submission Deadline",
+    "date_deadline": "May 31, 2026",
+    "date_results_label": "Results Notification",
+    "date_results": "June 15, 2026",
+    "date_ceremony_label": "Awards Ceremony",
+    "date_ceremony": "June 26, 2026",
+    "cta_title": "Submit Your Film",
+    "cta_desc": "Visit the official Tyrannus Angel Awards website for submission guidelines, categories, and more.",
+    "cta_button": "Visit goodaifilm.com"
   },
   "footer": {
     "tagline": "AI-Powered Film Production",
