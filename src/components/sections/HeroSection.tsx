@@ -10,28 +10,30 @@ export default function HeroSection() {
   return (
     <section
       id="hero"
-      className="cinema-gradient relative flex min-h-screen items-center justify-center overflow-hidden"
+      className="relative flex min-h-screen items-center justify-center overflow-hidden bg-cinema-black film-grain"
     >
-      {/* Subtle animated background grain */}
-      <div className="pointer-events-none absolute inset-0 opacity-5">
-        <div className="h-full w-full bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIj48ZmlsdGVyIGlkPSJhIiB4PSIwIiB5PSIwIj48ZmVUdXJidWxlbmNlIGJhc2VGcmVxdWVuY3k9Ii43NSIgc3RpdGNoVGlsZXM9InN0aXRjaCIgdHlwZT0iZnJhY3RhbE5vaXNlIi8+PC9maWx0ZXI+PHJlY3Qgd2lkdGg9IjMwMCIgaGVpZ2h0PSIzMDAiIGZpbHRlcj0idXJsKCNhKSIgb3BhY2l0eT0iMC4xNSIvPjwvc3ZnPg==')]" />
-      </div>
+      {/* Ambient light effects */}
+      <div className="pointer-events-none absolute left-1/2 top-1/3 h-[600px] w-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-gold/[0.04] blur-[120px]" />
+      <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold/20 to-transparent" />
 
-      <div className="relative z-10 mx-auto max-w-4xl px-6 text-center">
+      {/* Content */}
+      <div className="relative z-10 mx-auto max-w-5xl px-6 text-center">
         <motion.h1
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-          className="text-4xl font-bold leading-tight text-white md:text-6xl lg:text-7xl"
+          transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+          className="font-display text-5xl font-bold leading-[1.1] tracking-tight text-white md:text-7xl lg:text-8xl"
         >
-          <span className="gold-gradient">{t("tagline")}</span>
+          {t("tagline_line1")}
+          <br />
+          <span className="gold-gradient">{t("tagline_line2")}</span>
         </motion.h1>
 
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-          className="mx-auto mt-6 max-w-2xl text-lg text-gray-400 md:text-xl"
+          transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
+          className="mx-auto mt-8 max-w-2xl text-lg leading-relaxed text-gray-400 md:text-xl"
         >
           {t("subtitle")}
         </motion.p>
@@ -39,10 +41,10 @@ export default function HeroSection() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
+          transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
           className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center"
         >
-          <Button variant="primary" size="lg" href="#portfolio">
+          <Button variant="secondary" size="lg" href="#portfolio">
             {t("cta_portfolio")}
           </Button>
           <Button variant="outline" size="lg" href="#contact">
@@ -55,15 +57,18 @@ export default function HeroSection() {
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 1.2 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2"
+        transition={{ delay: 1.5 }}
+        className="absolute bottom-8 left-1/2 z-20 -translate-x-1/2"
       >
         <motion.div
           animate={{ y: [0, 8, 0] }}
-          transition={{ duration: 1.5, repeat: Infinity }}
-          className="h-10 w-6 rounded-full border-2 border-white/30"
+          transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+          className="flex flex-col items-center gap-2"
         >
-          <div className="mx-auto mt-2 h-2 w-1 rounded-full bg-white/50" />
+          <span className="text-xs font-medium uppercase tracking-[0.2em] text-white/30">
+            Scroll
+          </span>
+          <div className="h-10 w-px bg-gradient-to-b from-white/30 to-transparent" />
         </motion.div>
       </motion.div>
     </section>

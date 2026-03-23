@@ -2,90 +2,194 @@
   "nav": {
     "about": "About",
     "services": "Services",
-    "portfolio": "Portfolio",
+    "portfolio": "Reel",
     "aifilm": "AI Film",
-    "contact": "Contact"
+    "contact": "Contact",
+    "for_tech": "For Tech",
+    "for_community": "For Community",
+    "ai_agent": "AI Agent",
+    "robotics": "Robotics",
+    "trae_solo": "ByteDance Trae",
+    "tether": "TetherIA",
+    "river_of_life": "River of Life",
+    "kah_bay_area": "KAH Bay Area"
   },
   "hero": {
-    "tagline": "Where Silicon Valley Meets Hollywood",
-    "subtitle": "Silicon Valley-based, Hollywood-crafted AI film production studio",
-    "cta_portfolio": "View Our Work",
-    "cta_contact": "Get in Touch"
+    "badge": "Now Showing — Trae SOLO GA Release",
+    "tagline_line1": "Where Silicon Valley",
+    "tagline_line2": "Meets Hollywood",
+    "subtitle": "A Silicon Valley film studio with Hollywood DNA. We craft cinematic stories for the world's most innovative companies — powered by AI.",
+    "cta_portfolio": "View Our Reel",
+    "cta_contact": "Start a Project"
+  },
+  "clients": {
+    "label": "Trusted by"
   },
   "about": {
-    "title": "About Us",
-    "subtitle": "Bridging Two Worlds",
-    "description": "Good Film AI (Summer Grace LLC) is a film and video production studio based in Silicon Valley, with a production team rooted in LA/Hollywood craftsmanship. We bring together cutting-edge technology and cinematic artistry to serve the world's most innovative companies.",
-    "description2": "We specialize in corporate storytelling, event documentation, and commercial production for tech companies, conferences, and nonprofit organizations. As pioneers in AI Film, we're exploring how generative AI and AI agents can revolutionize the filmmaking process.",
+    "title": "The Studio",
+    "subtitle": "Two coasts. One vision.",
+    "description": "Good Film AI (Summer Grace LLC) is a film and video production studio headquartered in Silicon Valley, with deep roots in Hollywood craftsmanship. We bring together cutting-edge technology and cinematic artistry.",
+    "description2": "We specialize in corporate storytelling, event documentation, and commercial production for tech companies, conferences, and nonprofit organizations. As pioneers in AI Film, we're redefining what's possible in production.",
     "stat_projects": "Projects Delivered",
-    "stat_cities": "Cities",
+    "stat_cities": "Coasts",
     "stat_clients": "Happy Clients",
     "city_sv": "Silicon Valley",
-    "city_la": "Los Angeles"
+    "city_la": "Hollywood"
+  },
+  "team": {
+    "title": "Leadership",
+    "subtitle": "Meet the founder",
+    "name": "Jenny Liu",
+    "role": "Founder & CEO",
+    "bio": "A graduate of USC and UCLA, Jenny spent years in Hollywood as a First Assistant Director before founding Summer Grace Studio in Silicon Valley in 2023 to serve local tech companies and communities. In 2026, the studio rebranded as Good Film AI — harnessing Generative AI and AI Agents to empower film production. Use AI well, make films great."
   },
   "services": {
-    "title": "Our Services",
-    "subtitle": "Professional Video Production",
+    "title": "Our Craft",
+    "subtitle": "End-to-end production capabilities",
     "corporate": {
-      "title": "Corporate Video",
-      "description": "Company profiles, product demos, and brand storytelling that capture your vision and engage your audience."
+      "title": "Corporate Film",
+      "description": "Company profiles, product demos, and brand narratives that capture your vision with cinematic quality."
     },
     "event": {
       "title": "Event Coverage",
-      "description": "Tech conferences, product launches, trade shows, and corporate events — documented with cinematic quality."
+      "description": "Tech conferences, product launches, and corporate events — documented with the eye of a filmmaker."
     },
     "commercial": {
-      "title": "Commercial & Ads",
-      "description": "Advertising films, promotional content, and social media campaigns that drive results."
+      "title": "Commercials & Ads",
+      "description": "Advertising films, promotional content, and campaigns crafted to move audiences and drive results."
     },
     "ai": {
-      "title": "AI Production",
-      "description": "Leveraging generative AI tools and AI agents to push the boundaries of visual storytelling."
+      "title": "AI-Powered Production",
+      "description": "Leveraging generative AI and intelligent agents to push the boundaries of visual storytelling."
     }
   },
   "portfolio": {
-    "title": "Our Work",
-    "subtitle": "Selected Projects",
+    "title": "Selected Work",
+    "subtitle": "From our reel",
     "trae": {
       "title": "Trae SOLO GA Release",
-      "description": "Product GA release video for ByteDance's AI coding assistant Trae.",
-      "category": "Product Release"
+      "description": "A 3-part cinematic series for ByteDance's AI coding assistant launch.",
+      "category": "Product Launch",
+      "cta": "View Case Study"
     },
-    "robotics": {
-      "title": "Robotics Innovation",
-      "description": "Corporate video showcasing cutting-edge robotics technology in Silicon Valley.",
-      "category": "Corporate Video"
+    "tether": {
+      "title": "TetherIA — Aero Hand",
+      "description": "Early-stage fundraising demo video for TetherIA's Aero Hand, an open-source robotic hand built for embodied AI research.",
+      "category": "Product Demo",
+      "cta": "View Case Study"
     },
     "techforum": {
       "title": "Tech Forum 2025",
-      "description": "Full event coverage for a major Silicon Valley technology conference.",
-      "category": "Event Coverage"
+      "description": "Full event coverage for a major Silicon Valley technology conference with multi-camera production.",
+      "category": "Event"
     },
     "nonprofit": {
-      "title": "Community Impact",
-      "description": "Nonprofit promotional film highlighting community programs and social impact.",
-      "category": "Nonprofit"
+      "title": "River of Life — Thanksgiving Fair",
+      "description": "Event film for River of Life Foundation's Thanksgiving Fair 2023, capturing community celebration and giving.",
+      "category": "Nonprofit",
+      "cta": "View Case Study"
     },
     "aifilm": {
       "title": "AI Short Film",
-      "description": "Experimental short film created using generative AI tools and traditional filmmaking.",
+      "description": "Experimental short film blending generative AI visuals with traditional cinematic storytelling.",
       "category": "AI Film"
+    },
+    "kah": {
+      "title": "KAH Bay Area — Packing for LA",
+      "description": "Event film documenting KAH Bay Area volunteers packing 72,360 meals for LA fire victims in January 2025.",
+      "category": "Nonprofit",
+      "cta": "View Case Study"
     }
+  },
+  "trae_page": {
+    "title": "Trae SOLO — GA Release",
+    "subtitle": "Case Study",
+    "intro": "A 3-part cinematic video series produced for the global launch of Trae SOLO, ByteDance's AI-native coding assistant. From concept to delivery, Good Film AI crafted a launch campaign that bridges developer culture with cinematic storytelling.",
+    "client": "ByteDance",
+    "client_label": "Client",
+    "role_label": "Role",
+    "role": "Full Production — Concept, Direction, Cinematography, Edit, Post",
+    "year_label": "Year",
+    "year": "2025",
+    "videos_title": "The Series",
+    "launch_title": "Part I — The Launch",
+    "launch_desc": "Hero film for the global GA release. Sets the tone for Trae SOLO's entry into the developer ecosystem.",
+    "vision_title": "Part II — The Vision",
+    "vision_desc": "Brand film exploring how Trae SOLO redefines the developer experience with AI-native workflows.",
+    "community_title": "Part III — The Community",
+    "community_desc": "Documentary-style film capturing the developer community's reaction and early adoption stories.",
+    "back": "Back to Reel"
+  },
+  "tether_page": {
+    "title": "TetherIA — Aero Hand",
+    "subtitle": "Case Study",
+    "intro": "A product demo video produced for TetherIA's early-stage fundraising, showcasing the Aero Hand — an open-source, tendon-driven robotic hand with 7 active degrees of freedom, built for embodied AI research.",
+    "client": "TetherIA",
+    "client_label": "Client",
+    "role_label": "Role",
+    "role": "Full Production — Concept, Direction, Cinematography, Edit",
+    "year_label": "Year",
+    "year": "2025",
+    "video_title": "The Film",
+    "video_heading": "Aero Hand — Product Demo",
+    "video_desc": "A cinematic product demo capturing the precision and capability of TetherIA's Aero Hand robotic system, designed to support their seed-stage fundraising efforts.",
+    "about_client": "About TetherIA",
+    "about_desc": "TetherIA develops the Aero Hand, an advanced robotic hand designed for embodied AI research. Their open-source platform features a tendon-driven mechanism with 16 joints, making sophisticated robotic manipulation accessible to researchers worldwide.",
+    "visit_site": "Visit tetheria.ai",
+    "back": "Back to Reel"
+  },
+  "river_page": {
+    "title": "River of Life — Thanksgiving Fair",
+    "subtitle": "Case Study",
+    "intro": "An event film produced for River of Life Foundation's annual Thanksgiving Fair 2023, capturing the spirit of community celebration, gratitude, and giving back.",
+    "client": "River of Life Foundation",
+    "client_label": "Client",
+    "role_label": "Role",
+    "role": "Full Production — Cinematography, Edit, Post",
+    "year_label": "Year",
+    "year": "2023",
+    "video_title": "The Film",
+    "video_heading": "Thanksgiving Fair 2023",
+    "video_desc": "A cinematic event film documenting River of Life Foundation's Thanksgiving Fair — capturing volunteers, families, and the community coming together in celebration.",
+    "about_client": "About River of Life Foundation",
+    "about_desc": "River of Life Foundation is a Bay Area nonprofit organization dedicated to serving the community through charitable events, outreach programs, and seasonal celebrations that bring people together.",
+    "watch_youtube": "Watch on YouTube",
+    "back": "Back to Reel"
+  },
+  "kah_page": {
+    "title": "KAH Bay Area — Packing for LA",
+    "subtitle": "Case Study",
+    "intro": "An event film documenting KAH Bay Area's extraordinary volunteer effort — packing 72,360 meals in just two days to support LA fire victims in January 2025.",
+    "client": "KAH Bay Area",
+    "client_label": "Client",
+    "role_label": "Role",
+    "role": "Full Production — Cinematography, Edit",
+    "year_label": "Year",
+    "year": "2025",
+    "video_title": "The Project",
+    "stat_meals": "Meals Packed",
+    "stat_delivered": "Total Meals Delivered",
+    "stat_days": "Days of Packing",
+    "description": "When the LA fires displaced thousands in January 2025, KAH Bay Area mobilized hundreds of volunteers to pack meals for those in need. Good Film AI documented this powerful community response, capturing the energy, compassion, and determination of every volunteer who showed up. The resulting 228,096 meals were delivered to LA neighbors with the help of Convoy of Hope.",
+    "about_client": "About KAH Bay Area",
+    "about_desc": "KAH Bay Area is a community organization that mobilizes volunteers for large-scale humanitarian efforts in the San Francisco Bay Area and beyond.",
+    "visit_site": "Visit kahbayarea.org",
+    "back": "Back to Reel"
   },
   "aifilm": {
     "title": "AI Film",
-    "subtitle": "The Future of Filmmaking",
-    "description": "We're at the forefront of AI-powered filmmaking, exploring how generative AI and intelligent agents can transform every stage of production — from pre-visualization and scriptwriting to post-production and visual effects.",
-    "feature1_title": "Gen AI Creation",
-    "feature1_desc": "Using state-of-the-art generative AI to create stunning visuals, expand creative possibilities, and accelerate production workflows.",
-    "feature2_title": "AI Agents in Production",
-    "feature2_desc": "Deploying intelligent AI agents that assist with scheduling, asset management, and creative decision-making throughout the production pipeline.",
-    "feature3_title": "Film Festival Presence",
-    "feature3_desc": "Our AI-assisted films have been showcased at AI Film Festivals, pushing the boundaries of what's possible in cinematic storytelling."
+    "subtitle": "The next frontier in filmmaking",
+    "description": "We're pioneering AI-powered filmmaking — exploring how generative AI and intelligent agents can transform every stage of production, from pre-visualization to post-production and beyond.",
+    "feature1_title": "Generative AI",
+    "feature1_desc": "State-of-the-art AI creating stunning visuals, expanding creative possibilities, and accelerating production workflows.",
+    "feature2_title": "AI Agents",
+    "feature2_desc": "Intelligent agents assisting with scheduling, asset management, and creative decisions throughout the production pipeline.",
+    "feature3_title": "Festival Circuit",
+    "feature3_desc": "Our AI-assisted films screened at AI Film Festivals, pushing the boundaries of cinematic storytelling."
   },
   "contact": {
-    "title": "Get in Touch",
-    "subtitle": "Let's Create Together",
+    "title": "Let's Create",
+    "subtitle": "Your next project starts here",
     "name": "Your Name",
     "email": "Email Address",
     "company": "Company (Optional)",
@@ -94,7 +198,7 @@
     "success": "Thank you! We'll be in touch soon.",
     "error": "Something went wrong. Please try again.",
     "book_title": "Book a Consultation",
-    "book_desc": "Schedule a free 30-minute consultation to discuss your project."
+    "book_desc": "Schedule a free 30-minute call to discuss your project."
   },
   "footer": {
     "tagline": "AI-Powered Film Production",

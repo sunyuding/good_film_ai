@@ -7,25 +7,15 @@ interface SectionHeadingProps {
 export default function SectionHeading({
   title,
   subtitle,
-  dark = false,
 }: SectionHeadingProps) {
   return (
-    <div className="mb-12 text-center md:mb-16">
-      <h2
-        className={`text-3xl font-bold md:text-4xl lg:text-5xl ${
-          dark ? "text-white" : "text-cinema-black"
-        }`}
-      >
-        {title}
-      </h2>
-      <p
-        className={`mt-3 text-lg ${
-          dark ? "text-gray-400" : "text-gray-500"
-        }`}
-      >
+    <div className="mb-16 text-center">
+      <p className="text-sm font-medium uppercase tracking-[0.2em] text-gold">
         {subtitle}
       </p>
-      <div className="mx-auto mt-4 h-1 w-16 rounded-full bg-gold" />
+      <h2 className="mt-4 font-display text-4xl font-bold text-white md:text-5xl lg:text-6xl">
+        {title}
+      </h2>
     </div>
   );
 }

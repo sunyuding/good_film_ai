@@ -12,6 +12,8 @@ export interface PortfolioItem {
   readonly key: string;
   readonly image: string;
   readonly videoUrl?: string;
+  readonly videoId?: string;
+  readonly externalUrl?: string;
 }
 
 export interface ContactFormData {

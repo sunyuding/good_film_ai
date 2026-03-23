@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+SC:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&display=swap');
 
 @layer base {
   html {
@@ -10,17 +10,17 @@
   }
 
   body {
-    @apply bg-white text-gray-900 antialiased;
+    @apply bg-cinema-black text-white antialiased;
   }
 
   ::selection {
-    @apply bg-gold/30 text-cinema-black;
+    @apply bg-gold/30 text-white;
   }
 }
 
 @layer components {
   .section-padding {
-    @apply px-6 py-20 md:px-12 lg:px-20 lg:py-28;
+    @apply px-6 py-24 md:px-12 lg:px-20 lg:py-32;
   }
 
   .cinema-gradient {
@@ -28,9 +28,45 @@
   }
 
   .gold-gradient {
-    background: linear-gradient(135deg, #c9a84c 0%, #d4b96a 50%, #a68a3a 100%);
+    background: linear-gradient(135deg, #d4a843 0%, #f0d078 40%, #c9a84c 60%, #a68a3a 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
+
+  .glass {
+    @apply border border-white/10 bg-white/5 backdrop-blur-md;
+  }
+
+  .glass-card {
+    @apply rounded-2xl border border-white/[0.08] bg-white/[0.03] p-8 backdrop-blur-sm transition-all duration-500;
+  }
+
+  .glass-card:hover {
+    @apply border-gold/20 bg-white/[0.06];
+  }
+
+  /* Film grain overlay */
+  .film-grain::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    opacity: 0.03;
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIj48ZmlsdGVyIGlkPSJhIiB4PSIwIiB5PSIwIj48ZmVUdXJidWxlbmNlIGJhc2VGcmVxdWVuY3k9Ii43NSIgc3RpdGNoVGlsZXM9InN0aXRjaCIgdHlwZT0iZnJhY3RhbE5vaXNlIi8+PC9maWx0ZXI+PHJlY3Qgd2lkdGg9IjMwMCIgaGVpZ2h0PSIzMDAiIGZpbHRlcj0idXJsKCNhKSIgb3BhY2l0eT0iMC4xNSIvPjwvc3ZnPg==");
+    pointer-events: none;
+  }
+
+  /* Cinematic letterbox bars */
+  .letterbox::before,
+  .letterbox::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 4%;
+    background: #000;
+    z-index: 15;
+  }
+  .letterbox::before { top: 0; }
+  .letterbox::after { bottom: 0; }
 }

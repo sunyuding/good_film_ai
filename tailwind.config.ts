@@ -11,13 +11,14 @@ const config: Config = {
       colors: {
         cinema: {
           black: "#0a0a0a",
-          dark: "#141414",
-          gray: "#1e1e1e",
+          dark: "#111111",
+          gray: "#1a1a1a",
+          mid: "#2a2a2a",
           light: "#f5f5f5",
         },
         gold: {
-          DEFAULT: "#c9a84c",
-          light: "#d4b96a",
+          DEFAULT: "#d4a843",
+          light: "#f0d078",
           dark: "#a68a3a",
         },
         accent: {
@@ -28,10 +29,12 @@ const config: Config = {
       },
       fontFamily: {
         sans: ["Inter", "Noto Sans SC", "sans-serif"],
+        display: ["Playfair Display", "serif"],
       },
       animation: {
-        "fade-in": "fadeIn 0.6s ease-out forwards",
-        "slide-up": "slideUp 0.6s ease-out forwards",
+        "fade-in": "fadeIn 0.8s ease-out forwards",
+        "slide-up": "slideUp 0.8s ease-out forwards",
+        "glow": "glow 3s ease-in-out infinite",
       },
       keyframes: {
         fadeIn: {
@@ -39,8 +42,12 @@ const config: Config = {
           "100%": { opacity: "1" },
         },
         slideUp: {
-          "0%": { opacity: "0", transform: "translateY(30px)" },
+          "0%": { opacity: "0", transform: "translateY(40px)" },
           "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+        glow: {
+          "0%, 100%": { opacity: "0.4" },
+          "50%": { opacity: "0.8" },
         },
       },
     },

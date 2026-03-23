@@ -8,6 +8,23 @@ export const NAV_ITEMS: readonly NavItem[] = [
   { label: "contact", href: "#contact" },
 ] as const;
 
+export const NAV_DROPDOWNS = {
+  forTech: {
+    labelKey: "for_tech",
+    items: [
+      { labelKey: "ai_agent", href: "/trae", sublabel: "trae_solo" },
+      { labelKey: "robotics", href: "/tether", sublabel: "tether" },
+    ],
+  },
+  forCharity: {
+    labelKey: "for_community",
+    items: [
+      { labelKey: "river_of_life", href: "/river-of-life" },
+      { labelKey: "kah_bay_area", href: "/kah" },
+    ],
+  },
+} as const;
+
 export const SERVICES: readonly ServiceItem[] = [
   { key: "corporate", icon: "Film" },
   { key: "event", icon: "Camera" },
@@ -19,14 +36,52 @@ export const PORTFOLIO_ITEMS: readonly PortfolioItem[] = [
   {
     key: "trae",
     image: "/images/portfolio-trae.jpg",
-    videoUrl:
-      "https://www.youtube.com/playlist?list=PL10F5K3_SNK3gd-vPL__fmfZV_8OWAnOQ",
+    videoUrl: "https://www.youtube.com/watch?v=fCAt50gHtLo",
+    videoId: "fCAt50gHtLo",
   },
-  { key: "robotics", image: "/images/portfolio-robotics.jpg" },
+  {
+    key: "tether",
+    image: "/images/portfolio-robotics.jpg",
+    videoUrl: "https://www.youtube.com/watch?v=w1GwRfy01Ag",
+    videoId: "w1GwRfy01Ag",
+  },
   { key: "techforum", image: "/images/portfolio-techforum.jpg" },
-  { key: "nonprofit", image: "/images/portfolio-nonprofit.jpg" },
+  {
+    key: "nonprofit",
+    image: "/images/portfolio-nonprofit.jpg",
+    videoUrl: "https://www.youtube.com/watch?v=xAMNZyXQIII",
+    videoId: "xAMNZyXQIII",
+  },
   { key: "aifilm", image: "/images/portfolio-aifilm.jpg" },
+  {
+    key: "kah",
+    image: "/images/portfolio-kah.jpg",
+    externalUrl: "https://kahbayarea.org/about-us/news/290-packing-for-la",
+  },
 ] as const;
+
+export const TRAE_VIDEOS = [
+  {
+    key: "launch",
+    videoId: "unwAa326n9M",
+    url: "https://www.youtube.com/watch?v=unwAa326n9M",
+  },
+  {
+    key: "vision",
+    videoId: "fCAt50gHtLo",
+    url: "https://www.youtube.com/watch?v=fCAt50gHtLo",
+  },
+  {
+    key: "community",
+    videoId: "mG8ey_PZ1Tc",
+    url: "https://www.youtube.com/watch?v=mG8ey_PZ1Tc",
+  },
+] as const;
+
+export const TETHER_VIDEO = {
+  videoId: "w1GwRfy01Ag",
+  url: "https://www.youtube.com/watch?v=w1GwRfy01Ag",
+} as const;
 
 export const CALENDLY_URL = "https://calendly.com/goodfilmai";
 

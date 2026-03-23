@@ -1,8 +1,8 @@
+"use client";
+
 import { useTranslations } from "next-intl";
 import { Film, Camera, Megaphone, Sparkles } from "lucide-react";
-import Card from "@/components/ui/Card";
 import ScrollReveal from "@/components/ui/ScrollReveal";
-import SectionHeading from "@/components/ui/SectionHeading";
 import { SERVICES } from "@/lib/constants";
 
 const iconMap = {
@@ -16,10 +16,17 @@ export default function ServicesSection() {
   const t = useTranslations("services");
 
   return (
-    <section id="services" className="section-padding bg-cinema-light">
+    <section id="services" className="section-padding relative bg-cinema-black">
       <div className="mx-auto max-w-6xl">
         <ScrollReveal>
-          <SectionHeading title={t("title")} subtitle={t("subtitle")} />
+          <div className="mb-16 text-center">
+            <p className="text-sm font-medium uppercase tracking-[0.2em] text-gold">
+              {t("subtitle")}
+            </p>
+            <h2 className="mt-4 font-display text-4xl font-bold text-white md:text-5xl lg:text-6xl">
+              {t("title")}
+            </h2>
+          </div>
         </ScrollReveal>
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -27,17 +34,17 @@ export default function ServicesSection() {
             const Icon = iconMap[service.icon as keyof typeof iconMap];
             return (
               <ScrollReveal key={service.key} delay={i * 0.1}>
-                <Card className="h-full text-center">
-                  <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-xl bg-accent/10">
-                    <Icon size={28} className="text-accent" />
+                <div className="glass-card group h-full text-center">
+                  <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-2xl border border-gold/10 bg-gold/5 transition-all duration-500 group-hover:border-gold/30 group-hover:bg-gold/10">
+                    <Icon size={28} className="text-gold transition-transform duration-500 group-hover:scale-110" />
                   </div>
-                  <h3 className="text-lg font-semibold text-cinema-black">
+                  <h3 className="text-lg font-semibold text-white">
                     {t(`${service.key}.title`)}
                   </h3>
-                  <p className="mt-2 text-sm leading-relaxed text-gray-500">
+                  <p className="mt-3 text-sm leading-relaxed text-gray-500">
                     {t(`${service.key}.description`)}
                   </p>
-                </Card>
+                </div>
               </ScrollReveal>
             );
           })}

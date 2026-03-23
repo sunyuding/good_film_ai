@@ -54,13 +54,13 @@ export async function POST(request: Request) {
         );
       }
     } else {
-      // Fallback: log when RESEND_API_KEY is not configured
-      console.log("Contact form submission (email not configured):", {
-        name,
-        email,
-        company,
-        message,
-      });
+      console.error(
+        "RESEND_API_KEY not configured — contact form submission lost",
+      );
+      return NextResponse.json(
+        { error: "Email service not configured" },
+        { status: 503 },
+      );
     }
 
     return NextResponse.json({ success: true });

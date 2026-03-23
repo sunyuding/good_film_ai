@@ -1,91 +1,195 @@
 {
   "nav": {
-    "about": "关于我们",
-    "services": "服务项目",
-    "portfolio": "作品展示",
+    "about": "关于",
+    "services": "服务",
+    "portfolio": "作品",
     "aifilm": "AI影视",
-    "contact": "联系我们"
+    "contact": "联系",
+    "for_tech": "科技客户",
+    "for_community": "社区公益",
+    "ai_agent": "AI Agent",
+    "robotics": "机器人",
+    "trae_solo": "ByteDance Trae",
+    "tether": "TetherIA",
+    "river_of_life": "River of Life",
+    "kah_bay_area": "KAH Bay Area"
   },
   "hero": {
-    "tagline": "硅谷科技 × 好莱坞创意",
-    "subtitle": "硅谷总部，好莱坞制作团队，AI赋能影视制作",
+    "badge": "正在放映 — Trae SOLO GA 发布",
+    "tagline_line1": "硅谷科技",
+    "tagline_line2": "好莱坞创意",
+    "subtitle": "硅谷总部，好莱坞基因。我们为全球最具创新力的企业打造电影级视觉叙事——由AI驱动。",
     "cta_portfolio": "查看作品",
-    "cta_contact": "联系我们"
+    "cta_contact": "开启项目"
+  },
+  "clients": {
+    "label": "信赖伙伴"
   },
   "about": {
-    "title": "关于我们",
-    "subtitle": "连接两个世界",
-    "description": "Good Film AI（Summer Grace LLC）是一家总部位于硅谷的影视制作工作室，制作团队源自洛杉矶/好莱坞。我们将前沿科技与电影级制作工艺相融合，服务全球最具创新力的企业。",
-    "description2": "我们专注于企业宣传片、活动记录和商业制作，服务科技公司、行业峰会和非营利机构。作为AI影视的先行者，我们正在探索生成式AI和AI Agents如何革新影视制作流程。",
+    "title": "工作室",
+    "subtitle": "双城联动，一个愿景",
+    "description": "Good Film AI（Summer Grace LLC）是一家总部位于硅谷的影视制作工作室，制作团队深耕好莱坞。我们将前沿科技与电影级制作工艺相融合。",
+    "description2": "我们专注于企业宣传片、活动记录和商业制作，服务科技公司、行业峰会和非营利机构。作为AI影视的先行者，我们正在重新定义制作的可能性。",
     "stat_projects": "交付项目",
-    "stat_cities": "城市布局",
+    "stat_cities": "双城布局",
     "stat_clients": "满意客户",
     "city_sv": "硅谷",
-    "city_la": "洛杉矶"
+    "city_la": "好莱坞"
+  },
+  "team": {
+    "title": "团队",
+    "subtitle": "创始人",
+    "name": "Jenny Liu",
+    "role": "创始人 & CEO",
+    "bio": "Jenny毕业于USC和UCLA，在好莱坞从事多年执行导演（First AD）工作。2023年在硅谷成立Summer Grace Studio，服务硅谷本地科技公司和社区。2026年更名为Good Film AI，利用Generative AI和AI Agent赋能影视制作。用好AI，做好影片。"
   },
   "services": {
-    "title": "服务项目",
-    "subtitle": "专业影视制作",
+    "title": "我们的工艺",
+    "subtitle": "全流程制作能力",
     "corporate": {
-      "title": "企业宣传片",
-      "description": "公司介绍、产品演示、品牌故事——精准捕捉您的愿景，打动目标受众。"
+      "title": "企业影片",
+      "description": "公司介绍、产品演示、品牌叙事——以电影级品质精准捕捉您的愿景。"
     },
     "event": {
-      "title": "活动/展会记录",
-      "description": "科技峰会、产品发布、行业展会、企业活动——以电影级品质完整记录。"
+      "title": "活动记录",
+      "description": "科技峰会、产品发布、企业活动——以电影人的视角完整记录。"
     },
     "commercial": {
       "title": "广告片",
-      "description": "广告影片、推广内容、社交媒体营销——用影像驱动商业成果。"
+      "description": "广告影片、推广内容、营销活动——打动受众，驱动商业成果。"
     },
     "ai": {
-      "title": "AI影视制作",
-      "description": "运用生成式AI工具和AI Agents，突破视觉叙事的边界。"
+      "title": "AI驱动制作",
+      "description": "运用生成式AI和智能代理，突破视觉叙事的边界。"
     }
   },
   "portfolio": {
-    "title": "作品展示",
-    "subtitle": "精选项目",
+    "title": "精选作品",
+    "subtitle": "来自我们的作品集",
     "trae": {
       "title": "Trae SOLO GA 发布",
-      "description": "字节跳动AI编程助手Trae产品正式发布（GA Release）视频。",
-      "category": "产品发布"
+      "description": "为字节跳动AI编程助手发布打造的三部曲电影系列。",
+      "category": "产品发布",
+      "cta": "查看案例详情"
     },
-    "robotics": {
-      "title": "机器人创新科技",
-      "description": "硅谷前沿机器人科技公司企业宣传片。",
-      "category": "企业宣传"
+    "tether": {
+      "title": "TetherIA — Aero Hand",
+      "description": "为TetherIA早期融资制作的产品展示视频，展示其开源仿人机械手Aero Hand，专为具身AI研究打造。",
+      "category": "产品展示",
+      "cta": "查看案例详情"
     },
     "techforum": {
       "title": "科技论坛 2025",
-      "description": "硅谷大型科技峰会全程活动记录。",
+      "description": "硅谷大型科技峰会全程多机位活动记录。",
       "category": "活动记录"
     },
     "nonprofit": {
-      "title": "社区影响力",
-      "description": "非营利机构公益宣传片，展示社区项目与社会影响力。",
-      "category": "公益宣传"
+      "title": "River of Life — 感恩节嘉年华",
+      "description": "River of Life基金会2023感恩节嘉年华活动影片，记录社区欢庆与公益精神。",
+      "category": "公益",
+      "cta": "查看案例详情"
     },
     "aifilm": {
       "title": "AI实验短片",
-      "description": "运用生成式AI工具与传统电影技法创作的实验短片。",
+      "description": "生成式AI视觉与传统电影叙事的融合实验。",
       "category": "AI影视"
+    },
+    "kah": {
+      "title": "KAH Bay Area — 驰援洛杉矶",
+      "description": "记录KAH Bay Area志愿者为2025年1月洛杉矶火灾受灾群众打包72,360份爱心餐食。",
+      "category": "公益",
+      "cta": "查看案例详情"
     }
+  },
+  "trae_page": {
+    "title": "Trae SOLO — GA 发布",
+    "subtitle": "案例详情",
+    "intro": "为Trae SOLO（字节跳动AI原生编程助手）全球发布制作的三部曲电影系列。从概念到交付，Good Film AI打造了一场融合开发者文化与电影叙事的发布campaign。",
+    "client": "字节跳动",
+    "client_label": "客户",
+    "role_label": "职责",
+    "role": "全流程制作 — 概念、导演、摄影、剪辑、后期",
+    "year_label": "年份",
+    "year": "2025",
+    "videos_title": "系列影片",
+    "launch_title": "第一章 — 正式发布",
+    "launch_desc": "全球GA发布主视频。为Trae SOLO进入开发者生态定下基调。",
+    "vision_title": "第二章 — 愿景",
+    "vision_desc": "品牌影片，探索Trae SOLO如何以AI原生工作流重新定义开发者体验。",
+    "community_title": "第三章 — 社区",
+    "community_desc": "纪录片风格影片，捕捉开发者社区的反响与早期使用故事。",
+    "back": "返回作品集"
+  },
+  "tether_page": {
+    "title": "TetherIA — Aero Hand",
+    "subtitle": "案例详情",
+    "intro": "为TetherIA早期融资制作的产品展示视频，展示Aero Hand——一款开源腱驱动仿人机械手，拥有7个主动自由度，专为具身AI研究打造。",
+    "client": "TetherIA",
+    "client_label": "客户",
+    "role_label": "职责",
+    "role": "全流程制作 — 概念、导演、摄影、剪辑",
+    "year_label": "年份",
+    "year": "2025",
+    "video_title": "影片",
+    "video_heading": "Aero Hand — 产品展示",
+    "video_desc": "以电影级画面展示TetherIA Aero Hand机械手系统的精密性和强大能力，助力其种子轮融资。",
+    "about_client": "关于TetherIA",
+    "about_desc": "TetherIA研发Aero Hand高级仿人机械手，专为具身AI研究设计。其开源平台采用腱驱动机构，拥有16个关节，让全球研究者能够便捷使用先进的机器人操控系统。",
+    "visit_site": "访问 tetheria.ai",
+    "back": "返回作品集"
+  },
+  "river_page": {
+    "title": "River of Life — 感恩节嘉年华",
+    "subtitle": "案例详情",
+    "intro": "为River of Life基金会2023年度感恩节嘉年华制作的活动影片，记录社区欢聚、感恩与公益精神。",
+    "client": "River of Life Foundation",
+    "client_label": "客户",
+    "role_label": "职责",
+    "role": "全流程制作 — 摄影、剪辑、后期",
+    "year_label": "年份",
+    "year": "2023",
+    "video_title": "影片",
+    "video_heading": "2023感恩节嘉年华",
+    "video_desc": "以电影手法记录River of Life基金会感恩节嘉年华——志愿者、家庭与社区共同欢聚的温暖时刻。",
+    "about_client": "关于 River of Life Foundation",
+    "about_desc": "River of Life Foundation是湾区一家非营利组织，致力于通过慈善活动、社区外展和节日庆典将人们凝聚在一起。",
+    "watch_youtube": "在YouTube观看",
+    "back": "返回作品集"
+  },
+  "kah_page": {
+    "title": "KAH Bay Area — 驰援洛杉矶",
+    "subtitle": "案例详情",
+    "intro": "记录KAH Bay Area志愿者的非凡行动——在短短两天内打包72,360份爱心餐食，驰援2025年1月洛杉矶火灾受灾群众。",
+    "client": "KAH Bay Area",
+    "client_label": "客户",
+    "role_label": "职责",
+    "role": "全流程制作 — 摄影、剪辑",
+    "year_label": "年份",
+    "year": "2025",
+    "video_title": "项目详情",
+    "stat_meals": "打包餐食",
+    "stat_delivered": "送达总餐食",
+    "stat_days": "天完成打包",
+    "description": "2025年1月洛杉矶大火导致数千人流离失所，KAH Bay Area迅速动员数百名志愿者为受灾群众打包餐食。Good Film AI记录了这场震撼人心的社区救援行动，捕捉每一位志愿者的热情、关爱与坚定。最终228,096份餐食在Convoy of Hope的协助下送达洛杉矶受灾群众手中。",
+    "about_client": "关于 KAH Bay Area",
+    "about_desc": "KAH Bay Area是一个社区组织，动员志愿者参与旧金山湾区及周边地区的大规模人道主义救援行动。",
+    "visit_site": "访问 kahbayarea.org",
+    "back": "返回作品集"
   },
   "aifilm": {
     "title": "AI影视",
-    "subtitle": "影视制作的未来",
-    "description": "我们站在AI影视制作的前沿，探索生成式AI和智能代理如何变革制作的每一个环节——从预可视化和剧本创作，到后期制作和视觉特效。",
-    "feature1_title": "Gen AI 创作",
-    "feature1_desc": "运用最前沿的生成式AI创造令人惊叹的视觉效果，拓展创意可能，加速制作流程。",
-    "feature2_title": "AI Agents 赋能制作",
-    "feature2_desc": "部署智能AI代理，在整个制作流程中协助排期管理、素材管理和创意决策。",
-    "feature3_title": "AI电影节亮相",
-    "feature3_desc": "我们的AI辅助影片已在AI电影节上展映，不断突破电影叙事的可能性边界。"
+    "subtitle": "影视制作的下一个前沿",
+    "description": "我们正在开拓AI驱动的影视制作——探索生成式AI和智能代理如何变革制作的每一个环节，从预可视化到后期制作。",
+    "feature1_title": "生成式AI",
+    "feature1_desc": "最前沿AI创造令人惊叹的视觉效果，拓展创意可能，加速制作流程。",
+    "feature2_title": "AI代理",
+    "feature2_desc": "智能代理在整个制作流程中协助排期、素材管理和创意决策。",
+    "feature3_title": "电影节展映",
+    "feature3_desc": "我们的AI辅助影片已在AI电影节展映，不断突破电影叙事的边界。"
   },
   "contact": {
-    "title": "联系我们",
-    "subtitle": "一起创造精彩",
+    "title": "开启合作",
+    "subtitle": "您的下一个项目从这里开始",
     "name": "您的姓名",
     "email": "电子邮箱",
     "company": "公司名称（选填）",
@@ -94,10 +198,10 @@
     "success": "感谢您的留言！我们会尽快联系您。",
     "error": "发送失败，请稍后重试。",
     "book_title": "预约咨询",
-    "book_desc": "预约免费30分钟咨询，详细讨论您的项目需求。"
+    "book_desc": "预约免费30分钟通话，详细讨论您的项目。"
   },
   "footer": {
-    "tagline": "AI赋能影视制作",
+    "tagline": "AI驱动影视制作",
     "rights": "版权所有。",
     "company": "Summer Grace LLC"
   }

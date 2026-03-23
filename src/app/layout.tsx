@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: "Good Film AI — AI-Powered Film Production",
   description:
     "Silicon Valley-based film production studio with Hollywood production team. Corporate videos, event coverage, commercials, and AI filmmaking.",
+  icons: {
+    icon: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({
