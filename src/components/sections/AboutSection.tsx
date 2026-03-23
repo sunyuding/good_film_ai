@@ -28,7 +28,13 @@ export default function AboutSection() {
         </ScrollReveal>
 
         <ScrollReveal delay={0.1}>
-          <p className="mx-auto max-w-3xl text-center text-lg leading-relaxed text-gray-400">
+          <p className="mx-auto max-w-3xl text-center font-display text-2xl font-semibold italic text-gold/80 md:text-3xl">
+            &ldquo;{t("mission")}&rdquo;
+          </p>
+        </ScrollReveal>
+
+        <ScrollReveal delay={0.15}>
+          <p className="mx-auto mt-10 max-w-3xl text-center text-lg leading-relaxed text-gray-400">
             {t("description")}
           </p>
         </ScrollReveal>

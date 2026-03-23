@@ -11,8 +11,8 @@
     "robotics": "机器人",
     "trae_solo": "ByteDance Trae",
     "tether": "TetherIA",
-    "river_of_life": "River of Life",
-    "kah_bay_area": "KAH Bay Area"
+    "river_of_life": "River of Life Foundation",
+    "kah_bay_area": "Kids Against Hunger"
   },
   "hero": {
     "badge": "正在放映 — Trae SOLO GA 发布",
@@ -28,6 +28,7 @@
   "about": {
     "title": "工作室",
     "subtitle": "双城联动，一个愿景",
+    "mission": "用好AI，做好影片。",
     "description": "Good Film AI（Summer Grace LLC）是一家总部位于硅谷的影视制作工作室，制作团队深耕好莱坞。我们将前沿科技与电影级制作工艺相融合。",
     "description2": "我们专注于企业宣传片、活动记录和商业制作，服务科技公司、行业峰会和非营利机构。作为AI影视的先行者，我们正在重新定义制作的可能性。",
     "stat_projects": "交付项目",
@@ -41,7 +42,7 @@
     "subtitle": "创始人",
     "name": "Jenny Liu",
     "role": "创始人 & CEO",
-    "bio": "Jenny毕业于USC和UCLA，在好莱坞从事多年执行导演（First AD）工作。2023年在硅谷成立Summer Grace Studio，服务硅谷本地科技公司和社区。2026年更名为Good Film AI，利用Generative AI和AI Agent赋能影视制作。用好AI，做好影片。"
+    "bio": "Jenny毕业于USC和UCLA，在好莱坞从事多年执行导演（First AD）工作，参与制作纪录片、电影和广告片。2023年在硅谷成立Summer Grace Studio，服务硅谷本地科技公司和社区。2026年更名为Good Film AI，利用Generative AI和AI Agent赋能影视制作。用好AI，做好影片。"
   },
   "services": {
     "title": "我们的工艺",
@@ -95,8 +96,8 @@
       "category": "AI影视"
     },
     "kah": {
-      "title": "KAH Bay Area — 驰援洛杉矶",
-      "description": "记录KAH Bay Area志愿者为2025年1月洛杉矶火灾受灾群众打包72,360份爱心餐食。",
+      "title": "Kids Against Hunger — 驰援洛杉矶",
+      "description": "记录Kids Against Hunger志愿者为2025年1月洛杉矶火灾受灾群众打包72,360份爱心餐食。",
       "category": "公益",
       "cta": "查看案例详情"
     }
@@ -157,22 +158,24 @@
     "back": "返回作品集"
   },
   "kah_page": {
-    "title": "KAH Bay Area — 驰援洛杉矶",
+    "title": "Kids Against Hunger — 驰援洛杉矶",
     "subtitle": "案例详情",
-    "intro": "记录KAH Bay Area志愿者的非凡行动——在短短两天内打包72,360份爱心餐食，驰援2025年1月洛杉矶火灾受灾群众。",
-    "client": "KAH Bay Area",
+    "intro": "记录Kids Against Hunger志愿者的非凡行动——在短短两天内打包72,360份爱心餐食，驰援2025年1月洛杉矶火灾受灾群众。",
+    "client": "Kids Against Hunger",
     "client_label": "客户",
     "role_label": "职责",
     "role": "全流程制作 — 摄影、剪辑",
     "year_label": "年份",
     "year": "2025",
     "video_title": "项目详情",
+    "video_heading": "驰援洛杉矶火灾受灾群众 — 2025年1月",
+    "video_desc": "记录数百名Kids Against Hunger志愿者在短短两天内打包72,360份爱心餐食，驰援2025年1月洛杉矶火灾受灾群众的感人影片。",
     "stat_meals": "打包餐食",
     "stat_delivered": "送达总餐食",
     "stat_days": "天完成打包",
-    "description": "2025年1月洛杉矶大火导致数千人流离失所，KAH Bay Area迅速动员数百名志愿者为受灾群众打包餐食。Good Film AI记录了这场震撼人心的社区救援行动，捕捉每一位志愿者的热情、关爱与坚定。最终228,096份餐食在Convoy of Hope的协助下送达洛杉矶受灾群众手中。",
-    "about_client": "关于 KAH Bay Area",
-    "about_desc": "KAH Bay Area是一个社区组织，动员志愿者参与旧金山湾区及周边地区的大规模人道主义救援行动。",
+    "description": "2025年1月洛杉矶大火导致数千人流离失所，Kids Against Hunger迅速动员数百名志愿者为受灾群众打包餐食。Good Film AI记录了这场震撼人心的社区救援行动，捕捉每一位志愿者的热情、关爱与坚定。最终228,096份餐食在Convoy of Hope的协助下送达洛杉矶受灾群众手中。",
+    "about_client": "关于 Kids Against Hunger",
+    "about_desc": "Kids Against Hunger是一个社区组织，动员志愿者参与旧金山湾区及周边地区的大规模人道主义救援行动。",
     "visit_site": "访问 kahbayarea.org",
     "back": "返回作品集"
   },

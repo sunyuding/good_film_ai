@@ -66,17 +66,13 @@ export default function KahContent() {
               <p className="text-xs font-semibold uppercase tracking-[0.15em] text-gray-600">
                 {t("role_label")}
               </p>
-              <p className="mt-1 text-lg font-medium text-white">
-                {t("role")}
-              </p>
+              <p className="mt-1 text-lg font-medium text-white">{t("role")}</p>
             </div>
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.15em] text-gray-600">
                 {t("year_label")}
               </p>
-              <p className="mt-1 text-lg font-medium text-white">
-                {t("year")}
-              </p>
+              <p className="mt-1 text-lg font-medium text-white">{t("year")}</p>
             </div>
           </motion.div>
         </div>
@@ -98,6 +94,36 @@ export default function KahContent() {
             {t("video_title")}
           </motion.h2>
 
+          {/* Video */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-50px" }}
+            transition={{ duration: 0.7, delay: 0.1 }}
+            className="mb-16"
+          >
+            <div className="overflow-hidden rounded-2xl border border-white/[0.08] bg-white/[0.02]">
+              <div className="aspect-video">
+                <video
+                  src="https://kahbayarea.org/images/stories/kah_download/videos/KAH-LA-Jan2025.mp4"
+                  controls
+                  playsInline
+                  preload="metadata"
+                  className="h-full w-full"
+                  title={t("video_heading")}
+                />
+              </div>
+              <div className="p-6 md:p-8">
+                <h3 className="text-xl font-bold text-white md:text-2xl">
+                  {t("video_heading")}
+                </h3>
+                <p className="mt-3 max-w-2xl text-base leading-relaxed text-gray-400">
+                  {t("video_desc")}
+                </p>
+              </div>
+            </div>
+          </motion.div>
+
           {/* Impact stats */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -107,12 +133,18 @@ export default function KahContent() {
             className="mb-16 grid grid-cols-2 gap-6 md:grid-cols-3"
           >
             <div className="rounded-2xl border border-white/[0.08] bg-white/[0.02] p-6 text-center">
-              <p className="font-display text-3xl font-bold text-gold">72,360</p>
+              <p className="font-display text-3xl font-bold text-gold">
+                72,360
+              </p>
               <p className="mt-1 text-sm text-gray-500">{t("stat_meals")}</p>
             </div>
             <div className="rounded-2xl border border-white/[0.08] bg-white/[0.02] p-6 text-center">
-              <p className="font-display text-3xl font-bold text-gold">228,096</p>
-              <p className="mt-1 text-sm text-gray-500">{t("stat_delivered")}</p>
+              <p className="font-display text-3xl font-bold text-gold">
+                228,096
+              </p>
+              <p className="mt-1 text-sm text-gray-500">
+                {t("stat_delivered")}
+              </p>
             </div>
             <div className="col-span-2 rounded-2xl border border-white/[0.08] bg-white/[0.02] p-6 text-center md:col-span-1">
               <p className="font-display text-3xl font-bold text-gold">2</p>
@@ -141,7 +173,9 @@ export default function KahContent() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="rounded-2xl border border-white/[0.08] bg-white/[0.02] p-6 md:p-8"
           >
-            <h3 className="text-lg font-bold text-white">{t("about_client")}</h3>
+            <h3 className="text-lg font-bold text-white">
+              {t("about_client")}
+            </h3>
             <p className="mt-3 text-base leading-relaxed text-gray-400">
               {t("about_desc")}
             </p>

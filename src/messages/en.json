@@ -11,8 +11,8 @@
     "robotics": "Robotics",
     "trae_solo": "ByteDance Trae",
     "tether": "TetherIA",
-    "river_of_life": "River of Life",
-    "kah_bay_area": "KAH Bay Area"
+    "river_of_life": "River of Life Foundation",
+    "kah_bay_area": "Kids Against Hunger"
   },
   "hero": {
     "badge": "Now Showing — Trae SOLO GA Release",
@@ -28,6 +28,7 @@
   "about": {
     "title": "The Studio",
     "subtitle": "Two coasts. One vision.",
+    "mission": "Use AI well, make films great.",
     "description": "Good Film AI (Summer Grace LLC) is a film and video production studio headquartered in Silicon Valley, with deep roots in Hollywood craftsmanship. We bring together cutting-edge technology and cinematic artistry.",
     "description2": "We specialize in corporate storytelling, event documentation, and commercial production for tech companies, conferences, and nonprofit organizations. As pioneers in AI Film, we're redefining what's possible in production.",
     "stat_projects": "Projects Delivered",
@@ -41,7 +42,7 @@
     "subtitle": "Meet the founder",
     "name": "Jenny Liu",
     "role": "Founder & CEO",
-    "bio": "A graduate of USC and UCLA, Jenny spent years in Hollywood as a First Assistant Director before founding Summer Grace Studio in Silicon Valley in 2023 to serve local tech companies and communities. In 2026, the studio rebranded as Good Film AI — harnessing Generative AI and AI Agents to empower film production. Use AI well, make films great."
+    "bio": "A graduate of USC and UCLA, Jenny spent years in Hollywood as a First Assistant Director, working on documentaries, feature films, and commercials. In 2023, she founded Summer Grace Studio in Silicon Valley to serve local tech companies and communities. In 2026, the studio rebranded as Good Film AI — harnessing Generative AI and AI Agents to empower film production. Use AI well, make films great."
   },
   "services": {
     "title": "Our Craft",
@@ -95,8 +96,8 @@
       "category": "AI Film"
     },
     "kah": {
-      "title": "KAH Bay Area — Packing for LA",
-      "description": "Event film documenting KAH Bay Area volunteers packing 72,360 meals for LA fire victims in January 2025.",
+      "title": "Kids Against Hunger — Packing for LA",
+      "description": "Event film documenting Kids Against Hunger volunteers packing 72,360 meals for LA fire victims in January 2025.",
       "category": "Nonprofit",
       "cta": "View Case Study"
     }
@@ -157,22 +158,24 @@
     "back": "Back to Reel"
   },
   "kah_page": {
-    "title": "KAH Bay Area — Packing for LA",
+    "title": "Kids Against Hunger — Packing for LA",
     "subtitle": "Case Study",
-    "intro": "An event film documenting KAH Bay Area's extraordinary volunteer effort — packing 72,360 meals in just two days to support LA fire victims in January 2025.",
-    "client": "KAH Bay Area",
+    "intro": "An event film documenting Kids Against Hunger's extraordinary volunteer effort — packing 72,360 meals in just two days to support LA fire victims in January 2025.",
+    "client": "Kids Against Hunger",
     "client_label": "Client",
     "role_label": "Role",
     "role": "Full Production — Cinematography, Edit",
     "year_label": "Year",
     "year": "2025",
     "video_title": "The Project",
+    "video_heading": "Packing for LA Fire Victims — January 2025",
+    "video_desc": "A powerful event film capturing hundreds of Kids Against Hunger volunteers packing 72,360 meals in just two days to support communities displaced by the January 2025 LA fires.",
     "stat_meals": "Meals Packed",
     "stat_delivered": "Total Meals Delivered",
     "stat_days": "Days of Packing",
-    "description": "When the LA fires displaced thousands in January 2025, KAH Bay Area mobilized hundreds of volunteers to pack meals for those in need. Good Film AI documented this powerful community response, capturing the energy, compassion, and determination of every volunteer who showed up. The resulting 228,096 meals were delivered to LA neighbors with the help of Convoy of Hope.",
-    "about_client": "About KAH Bay Area",
-    "about_desc": "KAH Bay Area is a community organization that mobilizes volunteers for large-scale humanitarian efforts in the San Francisco Bay Area and beyond.",
+    "description": "When the LA fires displaced thousands in January 2025, Kids Against Hunger mobilized hundreds of volunteers to pack meals for those in need. Good Film AI documented this powerful community response, capturing the energy, compassion, and determination of every volunteer who showed up. The resulting 228,096 meals were delivered to LA neighbors with the help of Convoy of Hope.",
+    "about_client": "About Kids Against Hunger",
+    "about_desc": "Kids Against Hunger is a community organization that mobilizes volunteers for large-scale humanitarian efforts in the San Francisco Bay Area and beyond.",
     "visit_site": "Visit kahbayarea.org",
     "back": "Back to Reel"
   },

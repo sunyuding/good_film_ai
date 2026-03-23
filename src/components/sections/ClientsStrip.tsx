@@ -7,7 +7,7 @@ const CLIENTS = [
   { key: "bytedance", name: "ByteDance" },
   { key: "tetheria", name: "TetherIA" },
   { key: "riveroflife", name: "River of Life" },
-  { key: "kah", name: "KAH Bay Area" },
+  { key: "kah", name: "Kids Against Hunger" },
 ] as const;
 
 export default function ClientsStrip() {
