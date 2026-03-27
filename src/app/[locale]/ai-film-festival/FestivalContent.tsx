@@ -2,14 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
-import {
-  ArrowLeft,
-  ExternalLink,
-  Trophy,
-  Film,
-  Globe,
-  Calendar,
-} from "lucide-react";
+import { ArrowLeft, ExternalLink, Trophy, Film, Globe, Calendar } from "lucide-react";
 
 const highlights = [
   { titleKey: "highlight1_title", descKey: "highlight1_desc", icon: Trophy },
@@ -52,28 +45,10 @@ export default function FestivalContent() {
             </h1>
           </motion.div>
 
-          {/* YouTube video */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
-            className="mt-10 max-w-3xl"
-          >
-            <div className="relative aspect-video overflow-hidden rounded-2xl border border-white/[0.08]">
-              <iframe
-                src="https://www.youtube.com/embed/7yGTNgPcn14"
-                title="Tyrannus AI Film Festival"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                className="absolute inset-0 h-full w-full"
-              />
-            </div>
-          </motion.div>
-
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.5 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
             className="mt-8 max-w-3xl text-lg leading-relaxed text-gray-400"
           >
             {t("intro")}
@@ -90,7 +65,9 @@ export default function FestivalContent() {
               <p className="text-xs font-semibold uppercase tracking-[0.15em] text-gray-600">
                 {t("date_label")}
               </p>
-              <p className="mt-1 text-lg font-medium text-white">{t("date")}</p>
+              <p className="mt-1 text-lg font-medium text-white">
+                {t("date")}
+              </p>
             </div>
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.15em] text-gray-600">
@@ -104,7 +81,9 @@ export default function FestivalContent() {
               <p className="text-xs font-semibold uppercase tracking-[0.15em] text-gray-600">
                 {t("prize_label")}
               </p>
-              <p className="mt-1 text-lg font-medium text-gold">{t("prize")}</p>
+              <p className="mt-1 text-lg font-medium text-gold">
+                {t("prize")}
+              </p>
             </div>
           </motion.div>
         </div>
@@ -232,7 +211,9 @@ export default function FestivalContent() {
             <h2 className="font-display text-3xl font-bold text-white md:text-4xl">
               {t("cta_title")}
             </h2>
-            <p className="mt-4 text-lg text-gray-400">{t("cta_desc")}</p>
+            <p className="mt-4 text-lg text-gray-400">
+              {t("cta_desc")}
+            </p>
             <a
               href="https://goodaifilm.com"
               target="_blank"
