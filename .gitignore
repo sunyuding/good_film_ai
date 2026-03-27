@@ -10,6 +10,7 @@ tsconfig.tsbuildinfo
 
 # env
 .env*
+!.env.example
 
 # misc
 .DS_Store
@@ -23,6 +24,9 @@ npm-debug.log*
 
 # claude
 .claude/
+
+# test
+test-results/
 
 # backup/logs
 log/
