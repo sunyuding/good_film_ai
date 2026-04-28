@@ -27,7 +27,6 @@ export default function Header() {
   const dropdownItems = NAV_DROPDOWN.items.map((item) => ({
     label: t(item.labelKey),
     sublabel: "sublabel" in item ? t(item.sublabel as string) : undefined,
-    category: t(item.category),
     href: item.href.startsWith("/") ? `/${locale}${item.href}` : item.href,
     external: !item.href.startsWith("/"),
   }));
@@ -56,22 +55,26 @@ export default function Header() {
           className="hidden items-center gap-1 lg:flex"
           aria-label="Main navigation"
         >
-          {/* Work dropdown */}
-          <DropdownMenu
-            label={t(NAV_DROPDOWN.labelKey)}
-            items={dropdownItems}
-          />
-
           {/* Regular nav items */}
           {NAV_ITEMS.map((item) => (
             <a
               key={item.label}
-              href={item.href}
+              href={
+                item.href.startsWith("#")
+                  ? `/${locale}/${item.href}`
+                  : item.href
+              }
               className="rounded-lg px-4 py-2 text-sm font-medium text-gray-400 transition-all hover:bg-white/5 hover:text-white"
             >
               {t(item.label)}
             </a>
           ))}
+
+          {/* Projects dropdown */}
+          <DropdownMenu
+            label={t(NAV_DROPDOWN.labelKey)}
+            items={dropdownItems}
+          />
         </nav>
 
         {/* Desktop language switcher */}
@@ -97,25 +100,28 @@ export default function Header() {
           className="border-t border-white/10 bg-cinema-black/98 px-6 py-6 backdrop-blur-xl lg:hidden"
           aria-label="Mobile navigation"
         >
-          {/* Work dropdown */}
-          <MobileDropdown
-            label={t(NAV_DROPDOWN.labelKey)}
-            items={dropdownItems}
-            onNavigate={() => setMobileOpen(false)}
-          />
-
-          <div className="my-2 h-px bg-white/10" />
-
           {NAV_ITEMS.map((item) => (
             <a
               key={item.label}
-              href={item.href}
+              href={
+                item.href.startsWith("#")
+                  ? `/${locale}/${item.href}`
+                  : item.href
+              }
               className="block rounded-lg px-4 py-3 text-base font-medium text-gray-300 transition-colors hover:bg-white/5 hover:text-gold"
               onClick={() => setMobileOpen(false)}
             >
               {t(item.label)}
             </a>
           ))}
+
+          <div className="my-2 h-px bg-white/10" />
+
+          <MobileDropdown
+            label={t(NAV_DROPDOWN.labelKey)}
+            items={dropdownItems}
+            onNavigate={() => setMobileOpen(false)}
+          />
           <div className="mt-4 border-t border-white/10 pt-4 pl-4">
             <LanguageSwitcher onSwitch={switchLocale} currentLocale={locale} />
           </div>
@@ -134,7 +140,6 @@ function DropdownMenu({
   readonly items: readonly {
     label: string;
     sublabel?: string;
-    category?: string;
     href: string;
     external: boolean;
   }[];
@@ -149,18 +154,6 @@ function DropdownMenu({
 
   function handleLeave() {
     timeoutRef.current = setTimeout(() => setOpen(false), 150);
-  }
-
-  // Group items by category
-  const grouped: { category: string; items: typeof items }[] = [];
-  for (const item of items) {
-    const cat = item.category ?? "";
-    const existing = grouped.find((g) => g.category === cat);
-    if (existing) {
-      (existing.items as (typeof items)[number][]).push(item);
-    } else {
-      grouped.push({ category: cat, items: [item] });
-    }
   }
 
   return (
@@ -183,39 +176,27 @@ function DropdownMenu({
 
       {open && (
         <div className="absolute left-0 top-full mt-1 min-w-[220px] overflow-hidden rounded-xl border border-white/10 bg-cinema-black/95 py-2 shadow-xl backdrop-blur-xl">
-          {grouped.map((group, gi) => (
-            <div key={group.category}>
-              {gi > 0 && <div className="mx-3 my-1.5 h-px bg-white/10" />}
-              {group.category && (
-                <p className="px-4 pb-1 pt-2 text-[10px] font-semibold uppercase tracking-[0.15em] text-gray-600">
-                  {group.category}
-                </p>
+          {items.map((item) => (
+            <a
+              key={item.href}
+              href={item.href}
+              target={item.external ? "_blank" : undefined}
+              rel={item.external ? "noopener noreferrer" : undefined}
+              className="block px-4 py-2.5 transition-colors hover:bg-white/5"
+              onClick={() => setOpen(false)}
+            >
+              <span className="text-sm font-medium text-gray-300">
+                {item.label}
+                {item.external && (
+                  <span className="ml-1.5 text-[10px] text-gray-600">↗</span>
+                )}
+              </span>
+              {item.sublabel && (
+                <span className="block text-xs text-gray-500">
+                  {item.sublabel}
+                </span>
               )}
-              {group.items.map((item) => (
-                <a
-                  key={item.href}
-                  href={item.href}
-                  target={item.external ? "_blank" : undefined}
-                  rel={item.external ? "noopener noreferrer" : undefined}
-                  className="block px-4 py-2.5 transition-colors hover:bg-white/5"
-                  onClick={() => setOpen(false)}
-                >
-                  <span className="text-sm font-medium text-gray-300">
-                    {item.label}
-                    {item.external && (
-                      <span className="ml-1.5 text-[10px] text-gray-600">
-                        ↗
-                      </span>
-                    )}
-                  </span>
-                  {item.sublabel && (
-                    <span className="block text-xs text-gray-500">
-                      {item.sublabel}
-                    </span>
-                  )}
-                </a>
-              ))}
-            </div>
+            </a>
           ))}
         </div>
       )}
@@ -233,25 +214,12 @@ function MobileDropdown({
   readonly items: readonly {
     label: string;
     sublabel?: string;
-    category?: string;
     href: string;
     external: boolean;
   }[];
   readonly onNavigate: () => void;
 }) {
   const [open, setOpen] = useState(false);
-
-  // Group items by category
-  const grouped: { category: string; items: typeof items }[] = [];
-  for (const item of items) {
-    const cat = item.category ?? "";
-    const existing = grouped.find((g) => g.category === cat);
-    if (existing) {
-      (existing.items as (typeof items)[number][]).push(item);
-    } else {
-      grouped.push({ category: cat, items: [item] });
-    }
-  }
 
   return (
     <div>
@@ -267,36 +235,26 @@ function MobileDropdown({
         />
       </button>
       {open && (
-        <div className="ml-4 border-l border-white/10 pl-4">
-          {grouped.map((group, gi) => (
-            <div key={group.category}>
-              {gi > 0 && <div className="mx-1 my-1 h-px bg-white/10" />}
-              {group.category && (
-                <p className="px-3 pb-1 pt-2 text-[10px] font-semibold uppercase tracking-[0.15em] text-gray-600">
-                  {group.category}
-                </p>
+        <div className="ml-4 space-y-1 border-l border-white/10 pl-4">
+          {items.map((item) => (
+            <a
+              key={item.href}
+              href={item.href}
+              target={item.external ? "_blank" : undefined}
+              rel={item.external ? "noopener noreferrer" : undefined}
+              className="block rounded-lg px-3 py-2 transition-colors hover:text-white"
+              onClick={onNavigate}
+            >
+              <span className="text-sm text-gray-400">{item.label}</span>
+              {item.external && (
+                <span className="ml-1.5 text-[10px] text-gray-600">↗</span>
               )}
-              {group.items.map((item) => (
-                <a
-                  key={item.href}
-                  href={item.href}
-                  target={item.external ? "_blank" : undefined}
-                  rel={item.external ? "noopener noreferrer" : undefined}
-                  className="block rounded-lg px-3 py-2 transition-colors hover:text-white"
-                  onClick={onNavigate}
-                >
-                  <span className="text-sm text-gray-400">{item.label}</span>
-                  {item.external && (
-                    <span className="ml-1.5 text-[10px] text-gray-600">↗</span>
-                  )}
-                  {item.sublabel && (
-                    <span className="block text-xs text-gray-500">
-                      {item.sublabel}
-                    </span>
-                  )}
-                </a>
-              ))}
-            </div>
+              {item.sublabel && (
+                <span className="block text-xs text-gray-500">
+                  {item.sublabel}
+                </span>
+              )}
+            </a>
           ))}
         </div>
       )}

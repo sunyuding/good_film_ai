@@ -3,32 +3,16 @@ import type { NavItem, ServiceItem, PortfolioItem } from "@/types";
 export const NAV_ITEMS: readonly NavItem[] = [
   { label: "about", href: "#about" },
   { label: "services", href: "#services" },
-  { label: "portfolio", href: "#portfolio" },
-
   { label: "contact", href: "#contact" },
 ] as const;
 
 export const NAV_DROPDOWN = {
-  labelKey: "work",
+  labelKey: "projects",
   items: [
-    {
-      labelKey: "ai_agent",
-      href: "/trae",
-      sublabel: "trae_solo",
-      category: "for_tech",
-    },
-    {
-      labelKey: "robotics",
-      href: "/tether",
-      sublabel: "tether",
-      category: "for_tech",
-    },
-    {
-      labelKey: "river_of_life",
-      href: "/river-of-life",
-      category: "for_community",
-    },
-    { labelKey: "kah_bay_area", href: "/kah", category: "for_community" },
+    { labelKey: "ai_agent", href: "/trae", sublabel: "trae_solo" },
+    { labelKey: "robotics", href: "/tether", sublabel: "tether" },
+    { labelKey: "river_of_life", href: "/river-of-life" },
+    { labelKey: "kah_bay_area", href: "/kah" },
   ],
 } as const;
 
