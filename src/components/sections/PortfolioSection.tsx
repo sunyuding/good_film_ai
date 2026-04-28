@@ -33,7 +33,7 @@ export default function PortfolioSection() {
           </div>
         </ScrollReveal>
 
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mx-auto grid max-w-4xl gap-8 sm:grid-cols-2">
           {PORTFOLIO_ITEMS.map((item, i) => (
             <ScrollReveal key={item.key} delay={i * 0.08}>
               <PortfolioCard item={item} locale={locale} t={t} />
@@ -57,7 +57,7 @@ function PortfolioCard({
   const pageRoute = PAGE_ROUTES[item.key];
   const href = pageRoute
     ? `/${locale}${pageRoute}`
-    : item.externalUrl ?? undefined;
+    : (item.externalUrl ?? undefined);
   const isExternal = !pageRoute && !!item.externalUrl;
 
   const content = (
@@ -115,7 +115,5 @@ function PortfolioCard({
     );
   }
 
-  return (
-    <div className="glass-card group overflow-hidden !p-0">{content}</div>
-  );
+  return <div className="glass-card group overflow-hidden !p-0">{content}</div>;
 }

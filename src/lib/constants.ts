@@ -8,21 +8,28 @@ export const NAV_ITEMS: readonly NavItem[] = [
   { label: "contact", href: "#contact" },
 ] as const;
 
-export const NAV_DROPDOWNS = {
-  forTech: {
-    labelKey: "for_tech",
-    items: [
-      { labelKey: "ai_agent", href: "/trae", sublabel: "trae_solo" },
-      { labelKey: "robotics", href: "/tether", sublabel: "tether" },
-    ],
-  },
-  forCharity: {
-    labelKey: "for_community",
-    items: [
-      { labelKey: "river_of_life", href: "/river-of-life" },
-      { labelKey: "kah_bay_area", href: "/kah" },
-    ],
-  },
+export const NAV_DROPDOWN = {
+  labelKey: "work",
+  items: [
+    {
+      labelKey: "ai_agent",
+      href: "/trae",
+      sublabel: "trae_solo",
+      category: "for_tech",
+    },
+    {
+      labelKey: "robotics",
+      href: "/tether",
+      sublabel: "tether",
+      category: "for_tech",
+    },
+    {
+      labelKey: "river_of_life",
+      href: "/river-of-life",
+      category: "for_community",
+    },
+    { labelKey: "kah_bay_area", href: "/kah", category: "for_community" },
+  ],
 } as const;
 
 export const SERVICES: readonly ServiceItem[] = [
