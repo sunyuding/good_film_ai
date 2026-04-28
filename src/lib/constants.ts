@@ -4,7 +4,7 @@ export const NAV_ITEMS: readonly NavItem[] = [
   { label: "about", href: "#about" },
   { label: "services", href: "#services" },
   { label: "portfolio", href: "#portfolio" },
-  { label: "aifilm", href: "#aifilm" },
+
   { label: "contact", href: "#contact" },
 ] as const;
 
@@ -44,19 +44,6 @@ export const PORTFOLIO_ITEMS: readonly PortfolioItem[] = [
     image: "/images/portfolio-robotics.jpg",
     videoUrl: "https://www.youtube.com/watch?v=w1GwRfy01Ag",
     videoId: "w1GwRfy01Ag",
-  },
-  { key: "techforum", image: "/images/portfolio-techforum.jpg" },
-  {
-    key: "nonprofit",
-    image: "/images/portfolio-nonprofit.jpg",
-    videoUrl: "https://www.youtube.com/watch?v=xAMNZyXQIII",
-    videoId: "xAMNZyXQIII",
-  },
-  { key: "aifilm", image: "/images/portfolio-aifilm.jpg" },
-  {
-    key: "kah",
-    image: "/images/portfolio-kah.jpg",
-    externalUrl: "https://kahbayarea.org/about-us/news/290-packing-for-la",
   },
 ] as const;
 

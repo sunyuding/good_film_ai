@@ -105,7 +105,7 @@ export default function KahContent() {
             <div className="overflow-hidden rounded-2xl border border-white/[0.08] bg-white/[0.02]">
               <div className="aspect-video">
                 <video
-                  src="https://kahbayarea.org/images/stories/kah_download/videos/KAH-LA-Jan2025.mp4"
+                  src="https://pub-f21eb9a068d14465b07fb0f35726ac26.r2.dev/videos/KAH-LA-Jan2025.mp4"
                   controls
                   playsInline
                   preload="metadata"

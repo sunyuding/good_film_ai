@@ -4,7 +4,7 @@ import AboutSection from "@/components/sections/AboutSection";
 import TeamSection from "@/components/sections/TeamSection";
 import ServicesSection from "@/components/sections/ServicesSection";
 import PortfolioSection from "@/components/sections/PortfolioSection";
-import AIFilmSection from "@/components/sections/AIFilmSection";
+
 import ContactSection from "@/components/sections/ContactSection";
 
 export default function HomePage() {
@@ -16,7 +16,7 @@ export default function HomePage() {
       <TeamSection />
       <ServicesSection />
       <PortfolioSection />
-      <AIFilmSection />
+
       <ContactSection />
     </>
   );
