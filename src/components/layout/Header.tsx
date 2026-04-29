@@ -5,7 +5,7 @@ import { useTranslations } from "next-intl";
 import { Menu, X, Globe, ChevronDown } from "lucide-react";
 import { NAV_ITEMS, NAV_DROPDOWN } from "@/lib/constants";
 import { useLocale } from "next-intl";
-import { Link, useRouter, usePathname } from "@/i18n/navigation";
+import { useRouter, usePathname } from "@/i18n/navigation";
 
 export default function Header() {
   const t = useTranslations("nav");
@@ -30,7 +30,7 @@ export default function Header() {
   const dropdownItems = NAV_DROPDOWN.items.map((item) => ({
     label: t(item.labelKey),
     sublabel: "sublabel" in item ? t(item.sublabel as string) : undefined,
-    href: item.href,
+    href: item.href.startsWith("/") ? `/${locale}${item.href}` : item.href,
     external: !item.href.startsWith("/"),
   }));
 
@@ -44,14 +44,14 @@ export default function Header() {
     >
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6">
         {/* Logo */}
-        <Link href="/" className="group flex items-center gap-3">
+        <a href={`/${locale}`} className="group flex items-center gap-3">
           <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-gold">
             <span className="text-sm font-black text-cinema-black">GF</span>
           </div>
           <span className="text-lg font-bold tracking-tight text-white">
             Good Film <span className="text-gold">AI</span>
           </span>
-        </Link>
+        </a>
 
         {/* Desktop nav */}
         <nav
@@ -60,13 +60,13 @@ export default function Header() {
         >
           {/* Regular nav items */}
           {NAV_ITEMS.map((item) => (
-            <Link
+            <a
               key={item.label}
-              href={item.href.startsWith("#") ? `/${item.href}` : item.href}
+              href={`/${locale}${item.href}`}
               className="rounded-lg px-4 py-2 text-sm font-medium text-gray-400 transition-all hover:bg-white/5 hover:text-white"
             >
               {t(item.label)}
-            </Link>
+            </a>
           ))}
 
           {/* Projects dropdown */}
@@ -100,14 +100,14 @@ export default function Header() {
           aria-label="Mobile navigation"
         >
           {NAV_ITEMS.map((item) => (
-            <Link
+            <a
               key={item.label}
-              href={item.href.startsWith("#") ? `/${item.href}` : item.href}
+              href={`/${locale}${item.href}`}
               className="block rounded-lg px-4 py-3 text-base font-medium text-gray-300 transition-colors hover:bg-white/5 hover:text-gold"
               onClick={() => setMobileOpen(false)}
             >
               {t(item.label)}
-            </Link>
+            </a>
           ))}
 
           <div className="my-2 h-px bg-white/10" />
@@ -171,39 +171,28 @@ function DropdownMenu({
 
       {open && (
         <div className="absolute left-0 top-full mt-1 min-w-[220px] overflow-hidden rounded-xl border border-white/10 bg-cinema-black/95 py-2 shadow-xl backdrop-blur-xl">
-          {items.map((item) =>
-            item.external ? (
-              <a
-                key={item.href}
-                href={item.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block px-4 py-2.5 transition-colors hover:bg-white/5"
-                onClick={() => setOpen(false)}
-              >
-                <span className="text-sm font-medium text-gray-300">
-                  {item.label}
+          {items.map((item) => (
+            <a
+              key={item.href}
+              href={item.href}
+              target={item.external ? "_blank" : undefined}
+              rel={item.external ? "noopener noreferrer" : undefined}
+              className="block px-4 py-2.5 transition-colors hover:bg-white/5"
+              onClick={() => setOpen(false)}
+            >
+              <span className="text-sm font-medium text-gray-300">
+                {item.label}
+                {item.external && (
                   <span className="ml-1.5 text-[10px] text-gray-600">↗</span>
-                </span>
-              </a>
-            ) : (
-              <Link
-                key={item.href}
-                href={item.href}
-                className="block px-4 py-2.5 transition-colors hover:bg-white/5"
-                onClick={() => setOpen(false)}
-              >
-                <span className="text-sm font-medium text-gray-300">
-                  {item.label}
-                </span>
-                {item.sublabel && (
-                  <span className="block text-xs text-gray-500">
-                    {item.sublabel}
-                  </span>
                 )}
-              </Link>
-            ),
-          )}
+              </span>
+              {item.sublabel && (
+                <span className="block text-xs text-gray-500">
+                  {item.sublabel}
+                </span>
+              )}
+            </a>
+          ))}
         </div>
       )}
     </div>
@@ -242,37 +231,28 @@ function MobileDropdown({
       </button>
       {open && (
         <div className="ml-4 space-y-1 border-l border-white/10 pl-4">
-          {items.map((item) =>
-            item.external ? (
-              <a
-                key={item.href}
-                href={item.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block rounded-lg px-3 py-2 transition-colors hover:text-white"
-                onClick={onNavigate}
-              >
-                <span className="text-sm text-gray-400">
-                  {item.label}
+          {items.map((item) => (
+            <a
+              key={item.href}
+              href={item.href}
+              target={item.external ? "_blank" : undefined}
+              rel={item.external ? "noopener noreferrer" : undefined}
+              className="block rounded-lg px-3 py-2 transition-colors hover:text-white"
+              onClick={onNavigate}
+            >
+              <span className="text-sm text-gray-400">
+                {item.label}
+                {item.external && (
                   <span className="ml-1.5 text-[10px] text-gray-600">↗</span>
-                </span>
-              </a>
-            ) : (
-              <Link
-                key={item.href}
-                href={item.href}
-                className="block rounded-lg px-3 py-2 transition-colors hover:text-white"
-                onClick={onNavigate}
-              >
-                <span className="text-sm text-gray-400">{item.label}</span>
-                {item.sublabel && (
-                  <span className="block text-xs text-gray-500">
-                    {item.sublabel}
-                  </span>
                 )}
-              </Link>
-            ),
-          )}
+              </span>
+              {item.sublabel && (
+                <span className="block text-xs text-gray-500">
+                  {item.sublabel}
+                </span>
+              )}
+            </a>
+          ))}
         </div>
       )}
     </div>
