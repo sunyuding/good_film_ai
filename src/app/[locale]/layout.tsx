@@ -53,7 +53,7 @@ export default async function LocaleLayout({ children, params }: Props) {
   return (
     <html lang={locale} className="scroll-smooth">
       <body className="font-sans">
-        <NextIntlClientProvider messages={messages}>
+        <NextIntlClientProvider locale={locale} messages={messages}>
           <Header />
           <main>{children}</main>
           <Footer />
