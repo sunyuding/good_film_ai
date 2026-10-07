@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
-import { getTranslations } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { Analytics } from "@vercel/analytics/next";
@@ -12,8 +12,13 @@ type Props = {
   params: Promise<{ locale: string }>;
 };
 
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
+}
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
+  setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "hero" });
 
   const title =
@@ -47,6 +52,10 @@ export default async function LocaleLayout({ children, params }: Props) {
   if (!routing.locales.includes(locale as "en" | "zh")) {
     notFound();
   }
+
+  // Required for static export: without a request context next-intl cannot
+  // resolve requestLocale, so the locale is set explicitly for this render.
+  setRequestLocale(locale);
 
   const messages = (await import(`@/messages/${locale}.json`)).default;
 
