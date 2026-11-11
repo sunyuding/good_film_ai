@@ -3,7 +3,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
-import { Analytics } from "@vercel/analytics/next";
+import { messagesByLocale } from "@/i18n/messages";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 
@@ -48,7 +48,7 @@ export default async function LocaleLayout({ children, params }: Props) {
     notFound();
   }
 
-  const messages = (await import(`@/messages/${locale}.json`)).default;
+  const messages = messagesByLocale[locale as keyof typeof messagesByLocale];
 
   return (
     <html lang={locale} className="scroll-smooth">
@@ -57,7 +57,6 @@ export default async function LocaleLayout({ children, params }: Props) {
           <Header />
           <main>{children}</main>
           <Footer />
-          <Analytics />
         </NextIntlClientProvider>
       </body>
     </html>
