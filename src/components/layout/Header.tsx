@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Menu, X, Globe, ChevronDown } from "lucide-react";
 import { NAV_ITEMS, NAV_DROPDOWN } from "@/lib/constants";
@@ -45,9 +46,14 @@ export default function Header() {
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6">
         {/* Logo */}
         <a href={`/${locale}`} className="group flex items-center gap-3">
-          <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-gold">
-            <span className="text-sm font-black text-cinema-black">GF</span>
-          </div>
+          <Image
+            src="/giftbox-mark.png"
+            alt=""
+            width={44}
+            height={44}
+            className="h-11 w-11 object-contain transition-transform duration-300 group-hover:scale-105"
+            priority
+          />
           <span className="text-lg font-bold tracking-tight text-white">
             Good Film <span className="text-gold">AI</span>
           </span>
