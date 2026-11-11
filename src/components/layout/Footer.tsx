@@ -18,25 +18,20 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl">
         <div className="flex flex-col items-center gap-8 md:flex-row md:justify-between">
           {/* Brand */}
-          <div className="flex flex-col items-center gap-5 text-center sm:flex-row sm:text-left">
-            <Image
-              src="/summer-grace-logo.png"
-              alt="Summer Grace Studio gift box wrapped in film"
-              width={128}
-              height={128}
-              className="h-28 w-28 shrink-0 object-contain"
-            />
-            <div>
-              <div className="flex items-center justify-center gap-3 sm:justify-start">
-                <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gold">
-                  <span className="text-xs font-black text-cinema-black">GF</span>
-                </div>
-                <p className="text-lg font-bold tracking-tight text-white">
-                  Good Film <span className="text-gold">AI</span>
-                </p>
-              </div>
-              <p className="mt-2 text-sm text-gray-600">{t("tagline")}</p>
+          <div className="text-center md:text-left">
+            <div className="flex items-center justify-center gap-3 md:justify-start">
+              <Image
+                src="/giftbox-mark.png"
+                alt=""
+                width={44}
+                height={44}
+                className="h-11 w-11 object-contain"
+              />
+              <p className="text-lg font-bold tracking-tight text-white">
+                Good Film <span className="text-gold">AI</span>
+              </p>
             </div>
+            <p className="mt-2 text-sm text-gray-600">{t("tagline")}</p>
           </div>
 
           {/* Social links */}
