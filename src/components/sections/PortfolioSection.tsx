@@ -92,9 +92,7 @@ function PortfolioCard({
         </p>
         {pageRoute && (
           <div className="mt-3 flex items-center gap-1 text-sm font-medium text-gold opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-            {t(`${item.key}.cta` as Parameters<typeof t>[0], {
-              defaultValue: "View Case Study",
-            }) || "View Case Study"}
+            {t(`${item.key}.cta` as Parameters<typeof t>[0])}
             <ArrowRight size={14} />
           </div>
         )}

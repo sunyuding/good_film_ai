@@ -31,3 +31,7 @@ test-results/
 # backup/logs
 log/
 log.bak/
+/dist/
+.vinext/
+.cloudflare/
+.wrangler/
